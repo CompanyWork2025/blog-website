@@ -11,7 +11,7 @@ const CardDetail = () => {
       title: "Rostov University: A Leading Educational Hub in Russia",
       description: "Explore Rostov University, one of Russia's top institutions offering world-class education, cutting-edge research, and diverse academic programs.",
       authorImage: "https://worldwidecolleges.com/wp-content/uploads/2022/03/logo252.png",
-      image: "https://nixstudyabroad.com/wp-content/uploads/2022/01/rostov-state-medical-university.jpg",
+      image: "https://www.jagvimal.com/images/university_images/small/Rostov%20State%20Medical%20University%20banner.jpg-44513.jpg",
       additionalInfo: "Rostov State Medical University is one of Russia's leading institutions of higher education, renowned for its outstanding programs in medicine and healthcare. Founded in 1915, this prestigious university has a rich history of excellence in medical training, research, and clinical practice. Situated in the vibrant city of Rostov-on-Don, the university boasts state-of-the-art facilities and a global reputation for educating some of the best doctors and healthcare professionals in the country and beyond.",
       visitUrl: "https://www.rostgmu.in/"
     },
