@@ -32,7 +32,7 @@ const News = () => {
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       {/* Top Description */}
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h1 className="text-3xl lg:text-5xl text-blue-600 font-semibold mb-4">University News & Updates</h1>
+        <h1 className="text-3xl lg:text-5xl text-purple-400 font-bold mb-4">University News & Updates</h1>
         <p className="text-lg md:text-xl text-gray-800">
           Stay updated with the latest happenings, news articles, and announcements related to the university and our ongoing functions.
         </p>
