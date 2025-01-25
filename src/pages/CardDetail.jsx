@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 const CardDetail = () => {
-  const { id } = useParams();
+  const { id, url } = useParams();
 
   // Blog card data
   const blogCards = [
@@ -98,51 +98,53 @@ const CardDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
-  <div className="max-w-full sm:max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-    <div className="relative">
-      <img
-        src={card.image}
-        alt="University"
-        className="w-full h-72 sm:h-96 object-cover"
-      />
-      <div className="absolute bottom-4 left-4 p-4 bg-black bg-opacity-50 text-white rounded-lg">
-        <h1 className="text-2xl sm:text-4xl font-semibold">{card.title}</h1>
-      </div>
-    </div>
+    <div className="max-w-full sm:max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      
+  
 
-    <div className="p-4 sm:p-8">
-      <p className="text-lg sm:text-xl text-gray-800 mb-4">{card.description}</p>
-      <p className="text-base sm:text-lg text-gray-600 mb-6">{card.additionalInfo}</p>
-
-      <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
-        <div className="flex items-center mb-4 sm:mb-0">
-          <img
-            src={card.authorImage}
-            alt="University Logo"
-            className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover mr-4"
-          />
-          <p className="text-lg font-semibold">Learn more about {card.title}</p>
+      <div className="relative">
+        <img
+          src={card.image}
+          alt="University"
+          className="w-full h-72 sm:h-96 object-cover"
+        />
+        <div className="absolute bottom-4 left-4 p-4 bg-black bg-opacity-50 text-white rounded-lg">
+          <h1 className="text-2xl sm:text-4xl font-semibold">{card.title}</h1>
         </div>
-        <a
-          href={card.visitUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
-        >
-          Visit Site
-        </a>
       </div>
 
-      <hr className="my-6" />
+      <div className="p-4 sm:p-8">
+        <p className="text-lg sm:text-xl text-gray-800 mb-4">{card.description}</p>
+        <p className="text-base sm:text-lg text-gray-600 mb-6">{card.additionalInfo}</p>
 
-      <div className="mt-8">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">About the University</h2>
-        <p className="text-base sm:text-lg">{card.additionalInfo}</p>
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+          <div className="flex items-center mb-4 sm:mb-0">
+            <img
+              src={card.authorImage}
+              alt="University Logo"
+              className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover mr-4"
+            />
+            <p className="text-lg font-semibold">Learn more about {card.title}</p>
+          </div>
+          <a
+            href={card.visitUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
+          >
+            Visit Site
+          </a>
+        </div>
+
+        <hr className="my-6" />
+
+        <div className="mt-8">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4">About the University</h2>
+          <p className="text-base sm:text-lg">{card.additionalInfo}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
   );
 };
 
