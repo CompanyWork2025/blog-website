@@ -13,7 +13,7 @@ function University() {
       title: "Rostov University: A Leading Educational Hub in Russia",
       description: "Explore Rostov University, one of Russia's top institutions offering world-class education, cutting-edge research, and diverse academic programs. Learn about its rich history, innovative approach to learning, and vibrant student life.",
       authorImage: "https://worldwidecolleges.com/wp-content/uploads/2022/03/logo252.png",
-      image: "https://softamo.org/wp-content/uploads/2023/03/Rostov-State-Medical-University.jpg",
+      image: "https://satyamevedu.co.in/wp-content/uploads/2023/04/WhatsApp-Image-2022-05-10-at-12.18.11-AM-1024x683.jpeg",
       url: "https://www.rostgmu.in/",
     },
     {
