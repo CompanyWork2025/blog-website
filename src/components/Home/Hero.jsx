@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import bgImage from '../../assets/banner.png';  // Adjust the path according to where the image is stored in the src folder
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+// Sample images for the carousel
 const images = [
   {
     id: 1,
@@ -32,7 +34,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-blue-500 to-blue-300 text-white py-36 px-5 relative">
+    <div 
+  className="bg-cover bg-center bg-no-repeat relative py-36 px-5" 
+  style={{ backgroundImage: `url(${bgImage})` }}
+>
       {/* Bottom clip with gradient effect that moves from center outwards */}
       <div className="clip-bottom-arrow absolute inset-x-0 bottom-0 bg-white" />
 
@@ -41,7 +46,7 @@ export default function HeroSection() {
           <h1 className="text-4xl lg:text-5xl mb-6 lg:mb-0 font-serif font-bold leading-tight lg:text-left text-white uppercase">
             Discover Opportunities at <br /> Top Universities in Russia
           </h1>
-          <p className="text-lg mb-8 max-w-2xl italic">
+          <p className="text-lg mb-8 text-white mt-8 max-w-2xl italic">
             Explore our blog to learn more about academic programs, campus life, and the
             rich cultural experiences offered by Russia's leading universities. Stay
             informed with the latest updates and guidance for international students.
@@ -49,7 +54,7 @@ export default function HeroSection() {
 
           <div className="flex justify-center lg:justify-start gap-4">
             <Link to="/university"> {/* Link wraps the button */}
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+              <button className="bg-purple-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
                 Explore Blogs
                 <FaArrowRight className="w-5 h-5" />
               </button>

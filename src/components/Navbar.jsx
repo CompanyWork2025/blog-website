@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import logo from '../assets/logo.png'; // Import your logo image
+import logo from '../assets/logo1.jpg'; // Import your logo image
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,17 +19,17 @@ function Navbar() {
 
         {/* Center - Links (Visible on larger screens) */}
         <div className="hidden md:flex text-md space-x-8  lg:space-x-20">
-          <Link to="/" className="text-blue-400 font-semibold relative group">
+          <Link to="/" className="text-purple-400 font-semibold relative group">
             HOME
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
           </Link>
-          <Link to="/university" className="text-blue-400 font-semibold relative group">
+          <Link to="/university" className="text-purple-400 font-semibold relative group">
             UNIVERSITY
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
           </Link>
-          <Link to="/news" className="text-blue-400 font-semibold relative group">
+          <Link to="/news" className="text-purple-400 font-semibold relative group">
             NEWS
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
           </Link>
         </div>
 
@@ -39,7 +39,7 @@ function Navbar() {
             href="https://www.rostgmu.in/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="hidden md:block text-white bg-blue-400 px-6 py-2 font-semibold rounded-full hover:bg-blue-700"
+            className="hidden md:block text-white bg-purple-400 px-8 py-2 font-semibold rounded-full hover:bg-purple-700"
           >
             Visit Us
           </a>

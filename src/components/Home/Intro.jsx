@@ -34,7 +34,7 @@ const ImageGridComponent = () => {
 
   return (
     <div className="text-center py-10">
-      <h1 className="text-2xl lg:text-4xl text-blue-400 font-semibold mb-6">Welcome to Our Website</h1>
+      <h1 className="text-2xl lg:text-4xl text-purple-400 font-semibold mb-6">Welcome to Our Website</h1>
 
       {/* Paragraph */}
       <p className="lg:text-lg text-gray-700 mb-12">

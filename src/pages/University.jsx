@@ -108,7 +108,7 @@ function University() {
   return (
     <div className="min-h-screen lg:px-20 bg-gray-100 py-8">
       <div className="text-center mb-12">
-        <h1 className="lg:text-5xl text-2xl font-bold text-blue-400 mb-6">University Blog: Explore Top Universities</h1>
+        <h1 className="lg:text-5xl text-2xl font-bold text-purple-400 mb-6">University Blog: Explore Top Universities</h1>
         <p className="lg:text-xl text-md px-4 text-gray-700 mb-8">
           Discover the prestigious universities in Russia with a rich history, top-tier programs, cutting-edge research, and opportunities for students from all around the world. Dive into the world of academic excellence, innovation, and growth.
         </p>
@@ -161,14 +161,14 @@ function University() {
       <div className="flex justify-center items-center mt-8">
         <button
           onClick={prevPage}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mx-2"
+          className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-2"
           disabled={currentPage === 1}
         >
           Previous
         </button>
         <button
           onClick={nextPage}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mx-0"
+          className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-0"
           disabled={currentPage === Math.ceil(filteredBlogCards.length / postsPerPage)}
         >
           Next
