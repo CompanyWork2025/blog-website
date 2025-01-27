@@ -4,6 +4,7 @@ import Intro from "../components/Home/Intro";
 import About from "../components/Home/About";
 import Why from "../components/Home/Why";
 import Slider from "../components/Home/Slider";
+import FAQ from "../components/Home/FAQ";
 import Subscribe from "../components/Home/Subscribe";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
           <About />
           <Why />
           <Slider />
+          <FAQ />
           <Subscribe />
         </>
     )

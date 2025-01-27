@@ -11,6 +11,8 @@ import mobileBackground4 from "../../assets/6.webp";
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [bgColor, setBgColor] = useState("transparent"); // Default transparent background
+  const [bgOpacity, setBgOpacity] = useState(1); // Initial opacity is normal
 
   useEffect(() => {
     // Switch background every 5 seconds
@@ -23,11 +25,24 @@ const Hero = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
 
+    // Handle scroll event to change background color and opacity
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setBgColor("rgba(0, 0, 0, 0.26)"); // Apply a lighter dark overlay (darkish)
+        setBgOpacity(0.85); // Slightly reduce image opacity to accentuate the dark effect
+      } else {
+        setBgColor("transparent"); // Keep transparent background at the top
+        setBgOpacity(1); // Keep image at full opacity when at the top
+      }
+    };
+
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       clearInterval(interval);
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -47,6 +62,9 @@ const Hero = () => {
         backgroundPosition: "center",
         backgroundAttachment: isLargeScreen ? "scroll" : "fixed",
         minHeight: isLargeScreen ? "400px" : "20vh",
+        transition: "background-color 0.3s ease, opacity 0.3s ease",
+        backgroundColor: bgColor, // Lighter dark overlay
+        opacity: bgOpacity, // Apply opacity to background image
       }}
     >
       {/* Left-aligned Text */}
@@ -62,9 +80,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div
-        className={`h-[15vh] md:h-[55vh] lg:h-[600px]`}
-      >
+      <div className="h-[15vh] md:h-[55vh] lg:h-[600px]">
         {/* Additional content can be placed here */}
       </div>
     </div>

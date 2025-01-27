@@ -18,67 +18,91 @@ function University() {
     },
     {
       id: 2,
-      title: "Bashkir State Medical University: A Premier Medical Institution in Russia",
-      description: "Bashkir State Medical University in Ufa, Russia, offers exceptional medical programs. With state-of-the-art facilities and experienced faculty, it stands out as a leading institution for aspiring medical professionals from around the world.",
-      authorImage: "https://radicaleducation.in/wp-content/uploads/2024/05/Artboard-1-100.jpg",
-      image: "https://www.ruseducation.in/wp-content/uploads/2022/01/Bashkir-State-Medical-University.webp",
-      url: "https://bashgmu.ru/en/",
+      title: "Kazan State Medical University: A Premier Medical Institution in Russia",
+      description: "Kazan State Medical University (KSMU), established in 1814, is one of Russia's oldest and most prestigious medical institutions. Located in Kazan, Tatarstan, it operates under the Ministry of Health of Russia and offers a range of medical programs across nine faculties. ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/ru/1/14/KSMU_logo.png",
+      image: "https://entermedia.io/wp-content/uploads/2023/10/2-Zdanie-Medinstituta.jpg",
+      url: "https://www.studymbbsinkazan.com/",
     },
     {
       id: 3,
-      title: "Crimea University: Excellence in Higher Education in Russia",
-      description: "Crimea University, located in the heart of Crimea, Russia, offers a broad range of academic programs with a strong focus on research and innovation. Known for its diverse student body and distinguished faculty, it prepares students for global opportunities in various fields.",
-      authorImage: "https://radicaleducation.in/wp-content/uploads/2024/05/Artboard-1-100.jpg",
-      image: "https://www.ruseducation.in/wp-content/uploads/2022/01/Crimea-Federal-University.webp",
-      url: "https://eng.cfuv.ru/",
+      title: "Kursk State Medical University: Excellence in Higher Education in Russia",
+      description: "Kursk State Medical University (KSMU), established in 1935, is a prominent medical institution located in Kursk, Russia. In 1994, it was granted university status.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=f88858791dfe83477d8d4164bb0a87e1_l-4464154-images-thumbs&n=13",
+      image: "https://avatars.mds.yandex.net/i?id=c02c49eb9eac0482c9aa728e043031ea_l-10128543-images-thumbs&n=13",
+      url: "http://www.studymbbsinkursk.com/",
     },
     {
       id: 4,
-      title: "Saint Petersburg State University: Russia's Top Academic Destination",
-      description: "Saint Petersburg State University is one of Russia's oldest and most prestigious institutions. With a legacy of excellence in various fields, it attracts students globally for its highly respected programs in humanities, science, and engineering.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvn6EfY6nsur1_DybAZqGzbaJWpNeH9hyWQQ&s",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnaWh38SY7rlrqq_Pa5WMMP93Q_Bnc5RfeQ&s",
-      url: "https://english.spbu.ru/",
+      title: "Bashkir State State University: Russia's Top Academic Destination",
+      description: "Bashkir State Medical University (BSMU), established in 1932, is a prominent medical institution located in Ufa, the capital city of the Republic of Bashkortostan, Russia.",
+      authorImage: "https://uust.ru/unit/media/uploads/subdivuploads/z_%D0%95%D0%98%D0%9A/%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B/bgmu.png",
+      image: "https://www.navchetana.education/assets/images/universities/Russia/bashkir-medical-university.jpg",
+      url: "https://www.thedoctorsiea.in/",
     },
     {
       id: 5,
-      title: "Moscow State University: Leading Education in Russia and Beyond",
-      description: "Moscow State University is Russia's largest and most influential educational institution, renowned for its exceptional research, science programs, and globally recognized faculty. Learn about its various specialized academic departments.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8KS_x0o8jd3a7Po00tt1Sl85TXwtz2N9CQ&s",
-      image: "https://images.shiksha.com/mediadata/images/1423632114phpSVpSVi_g.jpg",
-      url: "https://msu.ru/en/",
+      title: "Yaroslavl State Medical University: Leading Education in Russia and Beyond",
+      description: "Yaroslavl State Medical University (YSMU), established in 1944, is a prominent medical institution located in Yaroslavl, Russia. It serves as a significant regional center for medical education and biomedical research.",
+      authorImage: "https://sun1-83.userapi.com/s/v1/ig2/8HYMedfwx01zUb3yXFZmad0i0x1DBcIhpw-B3OEARmryQTsR4zTuekBfJOtcVwK6sgt_J5a1knbcLkM9XzxFMw4j.jpg?size=704x705&quality=95&crop=24,9,704,705&ava=1",
+      image: "https://avatars.mds.yandex.net/i?id=ec31507e20e8f7e50c97bbc258fb50bd_l-5210027-images-thumbs&n=13",
+      url: "www.thedoctorsiea.in/",
     },
     {
       id: 6,
-      title: "Tomsk State University: Innovation and Research at Its Core",
-      description: "Known for its strong emphasis on scientific research and innovation, Tomsk State University is a leading institution for students aiming to engage in cutting-edge technological development and research. Explore what makes this university a standout in the Russian academic landscape.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmee60G2-AQRk1C_ZKC02ZmHEsKgPRnWSTQ&s",
-      image: "https://blog.rmgoe.org/wp-content/uploads/2022/06/Tomsk-State-University-Russia.webp",
-      url: "https://en.tsu.ru/",
+      title: "Crimea federal university - Medical Institute",
+      description: "The Medical Institute named after S.I. Georgievsky is a prominent division of the V.I. Vernadsky Crimean Federal University, located in Simferopol, Crimea.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=f94d4d6785247bde9e3dd7493464e4f2_l-5233210-images-thumbs&n=13",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Simferopol_04-14_img06_University.jpg/1200px-Simferopol_04-14_img06_University.jpg",
+      url: "https://www.rrecrussia.com/",
     },
     {
       id: 7,
-      title: "Novosibirsk State University: The Heart of Science in Siberia",
-      description: "Novosibirsk State University is renowned for its specialized focus on science and engineering. Located in Siberia, this prestigious university has gained international acclaim for its outstanding research programs and scientific contributions.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrXtOEX-VY96R4mL2Ke0sUu8eKKjdmZFhFA&s",
-      image: "https://www.rusvuz.com/wp-content/uploads/2020/05/Novosibirsk-State-University-1024x742.jpg",
-      url: "https://english.nsu.ru/",
+      title: "Ural State Medical University: The Heart of Science in Siberia",
+      description: "Ural State Medical University (USMU), established in 1930, is a prominent public medical institution located in Yekaterinburg, Russia.",
+      authorImage: "https://prog.susu.ru/img/logoSUSU.png",
+      image: "https://sun9-33.userapi.com/impg/Jlsvj_xGTvV1LoBpUh48YDQR_UH3shaDrunRJw/PvikfTDW7NA.jpg?size=1583x871&quality=95&sign=07cca795b4ee5146898bb2d1a4cd58ca&type=album",
+      url: "https://www.rrecrussia.com/",
     },
     {
       id: 8,
       title: "Kazan Federal University: Russia’s Premier Institution for International Students",
       description: "Kazan Federal University stands out for its comprehensive and inclusive educational approach, attracting students worldwide. Offering top-tier programs in the arts, sciences, and engineering, this university plays a major role in higher education across Russia and abroad.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpT87t_KxKQ5zjbDV8WuJVgwA9XeKvEhIg&s",
-      image: "https://studypalacehub.com/wp-content/uploads/2023/03/cr2.webp",
-      url: "https://eng.kpfu.ru/",
+      authorImage: "https://kpfu.ru/portal/docs/F1412758293/72b1797b0422d10993e2a5ed4a36198a.jpg",
+      image: "https://avatars.mds.yandex.net/i?id=e325a45bb0d74187113d99394bed8f7b_l-5285139-images-thumbs&n=13",
+      url: "https://www.rrecrussia.com/",
     },
     {
       id: 9,
-      title: "Ural Federal University: Academic Excellence and Innovation",
-      description: "Ural Federal University, located in Yekaterinburg, is one of Russia’s major centers for research and higher education, offering innovative programs in science, engineering, and technology. Learn about its state-of-the-art facilities and collaborative international programs.",
-      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsBZ-knGDQ8_W1NiFqBonexPMldaIWE8mJA&s",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThX_hIpllds7jW783nLyN-j9rYpjmDqlZWHg&s",
-      url: "https://urfu.ru/en/",
+      title: "Stavropol State Medical University: Academic Excellence and Innovation",
+      description: "Stavropol State Medical University (StSMU), established in 1938, is a reputable medical institution located in Stavropol, Russia. The university offers comprehensive medical education and training programs, preparing students to become qualified healthcare professionals. ",
+      authorImage: "https://www.jeduka.com/storage/school_image/2/stavropol-state-medical-university.png",
+      image: "https://avatars.mds.yandex.net/get-altay/12595784/2a0000018efa2d30934f9d6b409e2d6b0c4d/orig",
+      url: "http://www.thdoctorsiea.in/",
+    },
+    {
+      id: 10,
+      title: "Pacific State Medical University (PSMU)",
+      description: "Pacific State Medical University (PSMU), located in Vladivostok, Russia, was established in 1958. Originally part of the Far Eastern State University, it became an independent institution in 1958 and was later renamed PSMU in 2013. ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/en/b/b7/Pacific_State_Medical_University_logo.png",
+      image: "https://i.ytimg.com/vi/FF5XXwZhOyw/maxresdefault.jpg",
+      url: "http://www.thdoctorsiea.in/",
+    },
+    {
+      id: 11,
+      title: "Tver State Medical University (TSMU)",
+      description: "Tver State Medical University (TSMU), established in 1936, is one of Russia's oldest and most esteemed medical institutions. Located in Tver, the university has a rich history of contributing to medical education and research. ",
+      authorImage: "https://kr-alliance.com/upload/iblock/82f/rnhm3lbtre3btf9ehfhpnyecq1d4590l.png",
+      image: "https://sun9-70.userapi.com/impg/F-65mJRooGTah86tOmNPQkuk5hFtM2dFePW-zg/mi340lCOAKo.jpg?size=807x607&quality=95&sign=e6f46ad31a9cc07e7104c90ecf03b8fc&c_uniq_tag=gHfaj8qAo9qBjHNcdyRN64XA1juZC8AeMm_iHTxk-Yk&type=album",
+      url: "http://www.thdoctorsiea.in/",
+    },
+    {
+      id: 12,
+      title: "Mari state university (Medical faculty)",
+      description: "Mari State University, established in 1972, is a prominent educational institution located in Yoshkar-Ola, Russia. The university comprises six faculties and five institutes, offering a diverse range of programs across various disciplines.",
+      authorImage: "https://maristateuniversity.com/images/logo.png",
+      image: "https://orient.tm/storage/app/media/ru/2021/06/12062021%20%D0%9C%D0%B0%D1%80%D0%B8%D0%B9%20%D0%AD%D0%BB.jpg",
+      url: "http://www.thdoctorsiea.in/",
     }
   ];
 
@@ -96,12 +120,14 @@ function University() {
   const nextPage = () => {
     if (currentPage < Math.ceil(filteredBlogCards.length / postsPerPage)) {
       setCurrentPage(currentPage + 1);
+      window.scrollTo(0, 0);
     }
   };
 
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      window.scrollTo(0, 0);
     }
   };
 
