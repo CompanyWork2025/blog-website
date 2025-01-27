@@ -7,6 +7,8 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const closeMenu = () => setIsOpen(false); // Function to close the mobile menu
+
   return (
     <nav className="bg-white p-4 md:p-2 lg:px-14 sticky top-0 z-50 shadow-lg">
       <div className="flex items-center justify-between">
@@ -46,7 +48,7 @@ function Navbar() {
         </div>
 
         {/* Hamburger Menu Button (for small screens) */}
-        <button onClick={toggleMenu} className="md:hidden text-blue-600">
+        <button onClick={toggleMenu} className="md:hidden text-purple-600">
           {isOpen ? (
             // Close button (cross)
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
@@ -64,9 +66,9 @@ function Navbar() {
       {/* Mobile Menu (Toggle on button click) */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="space-y-4 py-4 text-center">
-          <li><Link to="/" className="text-blue-600 hover:underline">Home</Link></li>
-          <li><Link to="/university" className="text-blue-600 hover:underline">University</Link></li>
-          <li><Link to="/news" className="text-blue-600 hover:underline">News</Link></li>
+          <li><Link to="/" className="text-purple-600 hover:underline" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/university" className="text-purple-600 hover:underline" onClick={closeMenu}>University</Link></li>
+          <li><Link to="/news" className="text-purple-600 hover:underline" onClick={closeMenu}>News</Link></li>
         </ul>
       </div>
     </nav>

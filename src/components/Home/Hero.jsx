@@ -51,17 +51,17 @@ const Hero = () => {
     >
       {/* Left-aligned Text */}
       <div
-        className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 lg:px-24 p-6 text-white"
+        className="hidden lg:block absolute left-0 top-64 transform -translate-y-1/2 lg:px-24 p-6 text-white"
         style={{ zIndex: 10 }}
       >
-        <h1 className="text-2xl sm:text-4xl md:text-6xl font-expressa font-semibold">
+        <h1 className="text-2xl sm:text-4xl md:text-6xl font-expressa font-semibold text-shadow-xl">
           Why Russia
         </h1>
-        <p className="mt-4 text-lg sm:text-xl">
-          Discover the rich heritage and academic excellence of Russia's leading universities. Our blog brings you the latest insights, updates, and stories from students and academics who call Russia home. 
+        <p className="mt-4 text-lg sm:text-xl text-shadow-lg w-3/4">
+          Discover the rich heritage and academic excellence of Russia's leading universities. Our blog brings you the latest insights, updates, and stories from students and academics who call Russia home.
         </p>
-
       </div>
+
       <div
         className={`h-[15vh] md:h-[55vh] lg:h-[600px]`}
       >
