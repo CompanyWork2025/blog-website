@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImageGridComponent = () => {
+const Intro = () => {
   const images = [
     {
       id: 1,
@@ -33,40 +33,41 @@ const ImageGridComponent = () => {
   ];
 
   return (
-    <div className="text-center py-10">
-      <h1 className="text-2xl lg:text-4xl text-purple-400 font-semibold mb-6">Welcome to Our Website</h1>
+    <div className="flex justify-center items-center min-h-screen lg:-mt-40 bg-gray-50">
+      <div className="w-[350px] lg:w-[1200px] bg-white rounded-t-2xl -mt-24 text-center py-10 z-20">
+        <h1 className="text-2xl lg:text-4xl font-expressa text-purple-400 font-semibold mb-6">
+          Welcome to Our Blog Website
+        </h1>
 
-      {/* Paragraph */}
-      <p className="lg:text-lg text-gray-700 mb-12">
-        Explore top medical universities around the world and take your education to the next level. Discover more below!
-      </p>
+        <p className="lg:text-lg px-4 md:px-0 text-gray-700 mb-12">
+          Explore top medical universities around the world and take your education to the next level. Discover more below!
+        </p>
 
-      <div className="flex flex-wrap justify-center gap-8">
-        {images.map((image) => (
-          <div
-            key={image.id}
-            className="relative flex flex-col max-w-xs rounded-xl shadow-xl overflow-hidden group"
-          >
-            <div className="z-10 h-96 w-full border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="animate-fade-in block w-full h-full object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'center center', // Ensures the image is centered.
-                }}
-              />
+        <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+          {images.map((image) => (
+            <div
+              key={image.id}
+              className="relative flex flex-col max-w-xs rounded-xl shadow-xl overflow-hidden group mx-auto"
+            >
+              <div className="z-10 h-80 w-full border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="block w-full h-full object-cover object-center transition duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute bottom-0 z-20 p-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+                <h2 className="text-xl text-left font-semibold text-white shadow-xl">
+                  {image.title}
+                </h2>
+                <p className="text-sm text-gray-200 shadow-xl">{image.description}</p>
+              </div>
             </div>
-            <div className="absolute bottom-0 z-20 p-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-              <h2 className="text-xl text-left font-semibold text-white shadow-xl">{image.title}</h2>
-              <p className="text-sm text-gray-200 shadow-xl">{image.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default ImageGridComponent;
+export default Intro;

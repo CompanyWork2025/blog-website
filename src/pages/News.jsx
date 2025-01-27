@@ -35,7 +35,7 @@ const News = () => {
         <h1 className="text-3xl lg:text-5xl text-purple-400 font-bold mb-4">University News & Updates</h1>
         <p className="text-lg md:text-xl text-gray-800">
           Stay updated with the latest happenings, news articles, and announcements related to the university and our ongoing functions.
-        </p>
+        </p>  
       </div>
       
       {/* Category Buttons */}
@@ -44,7 +44,7 @@ const News = () => {
           className="px-8 py-3 mx-3 text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md text-lg"
           onClick={() => setSelectedCategory("latest")}
         >
-          Latest News
+               Latest News
         </button>
         <button
           className="px-8 py-3 mx-3 text-white bg-green-500 hover:bg-green-600 rounded-md shadow-md text-lg"

@@ -5,7 +5,12 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        expressa: ['Expressa Serial Regular', 'serif'], // Add the custom font
+        tilt_prism: ['"Tilt Prism"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

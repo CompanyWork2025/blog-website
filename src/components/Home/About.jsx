@@ -2,13 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-blue-50 p-8">
+    <div className="bg-blue-50 lg:-mt-40 p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl text-brown-600 font-semibold lg:text-start text-center mb-6">
+        <h1 className="text-3xl text-purple-600 font-semibold font-expressa lg:text-start text-center mb-6">
           Explore The Universities of Russia
         </h1>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 italic">
           {/* Left content */}
           <div className="flex-1">
             <p className="text-gray-700 space-x-4 text-lg mb-6 text-center lg:text-left">
@@ -71,7 +71,7 @@ const About = () => {
             <img
               src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-globe-world-with-graduate-hat-and-books-3d-image-png-image_12908027.png"
               alt="Globe"
-              className="w-full lg:w-[500px] lg:h-[600px] lg:-mt-24 lg:ml-4 h-auto object-contain mx-auto"
+              className="w-full lg:w-[500px] lg:h-[700px] lg:-mt-24 lg:ml-4 h-auto object-contain mx-auto"
             />
           </div>
         </div>

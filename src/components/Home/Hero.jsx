@@ -1,97 +1,74 @@
-import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
-import bgImage from '../../assets/banner.png';  // Adjust the path according to where the image is stored in the src folder
-import { FaArrowRight } from "react-icons/fa";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import background1 from "../../assets/3.jpg";
+import background2 from "../../assets/4.jpg";
+import background3 from "../../assets/5.avif";
+import background4 from "../../assets/6.webp";
+import mobileBackground1 from "../../assets/3.jpg";
+import mobileBackground2 from "../../assets/4.jpg";
+import mobileBackground3 from "../../assets/5.avif";
+import mobileBackground4 from "../../assets/6.webp";
 
-// Sample images for the carousel
-const images = [
-  {
-    id: 1,
-    src: "https://www.rostgmu.in/assets/logo-Dg4MTXqr.png",
-    alt: "First image description",
-  },
-  {
-    id: 2,
-    src: "https://www.eeua.ru/images/CFU_logo.png",
-    alt: "Second image description",
-  },
-  {
-    id: 3,
-    src: "https://i0.wp.com/vetrinichayam.com/wp-content/uploads/2021/05/vetrinichayam-logo.png",
-    alt: "Third image description",
-  },
-];
-
-export default function HeroSection() {
-  const [currentImage, setCurrentImage] = useState(0);
+const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
+    // Switch background every 5 seconds
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
+      setCurrentIndex((prev) => (prev + 1) % 4); // Cycle through 4 images
+    }, 5000);
+
+    // Update screen size on resize
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
+  const largeScreenBackgrounds = [background1, background2, background3, background4];
+  const mobileBackgrounds = [mobileBackground1, mobileBackground2, mobileBackground3, mobileBackground4];
+
+  const backgroundImage = isLargeScreen
+    ? largeScreenBackgrounds[currentIndex]
+    : mobileBackgrounds[currentIndex];
+
   return (
-    <div 
-  className="bg-cover bg-center bg-no-repeat relative py-36 px-5" 
-  style={{ backgroundImage: `url(${bgImage})` }}
->
-      {/* Bottom clip with gradient effect that moves from center outwards */}
-      <div className="clip-bottom-arrow absolute inset-x-0 bottom-0 bg-white" />
+    <div
+      className="relative w-full transition-all duration-1000 ease-in-out"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: isLargeScreen ? "cover" : "fit",
+        backgroundPosition: "center",
+        backgroundAttachment: isLargeScreen ? "scroll" : "fixed",
+        minHeight: isLargeScreen ? "400px" : "20vh",
+      }}
+    >
+      {/* Left-aligned Text */}
+      <div
+        className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 lg:px-24 p-6 text-white"
+        style={{ zIndex: 10 }}
+      >
+        <h1 className="text-2xl sm:text-4xl md:text-6xl font-expressa font-semibold">
+          Why Russia
+        </h1>
+        <p className="mt-4 text-lg sm:text-xl">
+          Discover the rich heritage and academic excellence of Russia's leading universities. Our blog brings you the latest insights, updates, and stories from students and academics who call Russia home. 
+        </p>
 
-      <div className="container mx-auto px-24 flex flex-col lg:flex-row items-center relative z-10">
-        <div className="text-center lg:text-left -mt-20 lg:-mt-14 max-w-4xl">
-          <h1 className="text-4xl lg:text-5xl mb-6 lg:mb-0 font-serif font-bold leading-tight lg:text-left text-white uppercase">
-            Discover Opportunities at <br /> Top Universities in Russia
-          </h1>
-          <p className="text-lg mb-8 text-white mt-8 max-w-2xl italic">
-            Explore our blog to learn more about academic programs, campus life, and the
-            rich cultural experiences offered by Russia's leading universities. Stay
-            informed with the latest updates and guidance for international students.
-          </p>
-
-          <div className="flex justify-center lg:justify-start gap-4">
-            <Link to="/university"> {/* Link wraps the button */}
-              <button className="bg-purple-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
-                Explore Blogs
-                <FaArrowRight className="w-5 h-5" />
-              </button>
-            </Link>
-          </div>
-        </div>
-
-        <div className="relative mt-10 lg:mt-0 lg:ml-10 w-full max-w-sm h-64">
-          {/* Map through images and create an animated image carousel */}
-          {images.map((image, index) => (
-            <motion.div
-              key={image.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: currentImage === index ? 1 : 0,
-                y: currentImage === index ? 0 : 20,
-              }}
-              transition={{ duration: 0.5 }}
-              className="absolute inset-0 flex justify-center items-center"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full max-w-xs mx-auto rounded-lg"
-              />
-            </motion.div>
-          ))}
-        </div>
       </div>
-
-      {/* Custom styling for the background clip (starts from the center and goes out) */}
-      <style>{`
-        .clip-bottom-arrow {
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          height: 50px; /* You can adjust this value for a bigger or smaller clip effect */
-        }
-      `}</style>
+      <div
+        className={`h-[15vh] md:h-[55vh] lg:h-[600px]`}
+      >
+        {/* Additional content can be placed here */}
+      </div>
     </div>
   );
-}
+};
+
+export default Hero;
