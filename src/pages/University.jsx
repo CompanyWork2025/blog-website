@@ -103,6 +103,38 @@ function University() {
       authorImage: "https://maristateuniversity.com/images/logo.png",
       image: "https://orient.tm/storage/app/media/ru/2021/06/12062021%20%D0%9C%D0%B0%D1%80%D0%B8%D0%B9%20%D0%AD%D0%BB.jpg",
       url: "http://www.thdoctorsiea.in/",
+    },
+    {
+      id: 13,
+      title: "Perm State Medical University (PSMU)",
+      description: "Perm State Medical University (PSMU), established in 1916, is a prominent medical institution located in Perm, Russia. It offers a range of medical programs, including a 6-year MBBS course designed for international students. ",
+      authorImage: "https://avatars.mds.yandex.net/i?id=081a63e65952e7cf1729adc83e4e4549-4055261-images-thumbs&n=13",
+      image: "https://avatars.mds.yandex.net/i?id=9600986cd3c762269cce8bacd8b487aa_l-9144733-images-thumbs&n=13",
+      url: "https://www.rrecrussia.com/",
+    },
+    {
+      id: 14,
+      title: "Tula State University (TSU)",
+      description: "Tula State University (TSU), established in 1930, is a prominent educational institution in Russia. It comprises nine faculties, including a dedicated Medical Institute. ",
+      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSQlyrPNLCuvZQg4tZ2Iz3T54cDxXBH2t4w&s",
+      image: "https://avatars.mds.yandex.net/i?id=ba297203ec2684b5d518ef31d203df51_l-4362911-images-thumbs&n=13",
+      url: "http://www.thedoctorsiea.in/",
+    },
+    {
+      id: 15,
+      title: "Pskov State University (PSU)",
+      description: "Pskov State University (PSU), established in 1936, is a prominent educational institution in Russia. It comprises six multidisciplinary institutes, including the Institute of Medicine and Experimental Biology, which houses the medical faculty.  ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/en/6/68/Logo_of_Pskov_State_University.png",
+      image: "https://sdelanounas.ru/i/d/n/n/f_dnNrbW8ucnUvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDYvSU1HXzYtc2NhbGVkLmpwZz9fX2lkPTE1MjMwMw==.jpeg",
+      url: "http://www.thedoctorsiea.in/",
+    },
+    {
+      id: 16,
+      title: "Volgograd State Medical University (VSMU)",
+      description: "Volgograd State Medical University (VSMU), established in 1935, is a prominent medical institution located in Volgograd, Russia.  ",
+      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV35SdAS0GfivWa-QphguoSOhOpRZZy8h6aQ&s",
+      image: "https://avatars.mds.yandex.net/i?id=94f804916c112e0fa57cb6217a5dfccf_l-9181372-images-thumbs&n=13",
+      url: "http://www.thedoctorsiea.in/",
     }
   ];
 

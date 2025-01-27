@@ -113,7 +113,43 @@ const CardDetail = () => {
       image: "https://avatars.mds.yandex.net/i?id=ae7c812becfce5fbf93c0d429369dbd9_l-5670257-images-thumbs&ref=rim&n=13&w=1024&h=431",
       additionalInfo: "Mari State University provides a supportive environment with modern facilities, including well-equipped laboratories, libraries, and clinical training centers. The university also offers accommodation options and various extracurricular activities to enhance the overall student experience.",
       url: "http://www.thdoctorsiea.in/",
-    }
+    },
+    {
+      id: 13,
+      title: "Perm State Medical University (PSMU)",
+      description: "Perm State Medical University (PSMU), established in 1916, is a prominent medical institution located in Perm, Russia. It offers a range of medical programs, including a 6-year MBBS course designed for international students.  ",
+      authorImage: "https://avatars.mds.yandex.net/i?id=081a63e65952e7cf1729adc83e4e4549-4055261-images-thumbs&n=13",
+      image: "https://i.ytimg.com/vi/wZF_NuTkRic/maxresdefault.jpg",
+      additionalInfo: "The university's commitment to quality education and research makes it a favorable choice for medical aspirants worldwide.",
+      url: "https://www.rrecrussia.com/",
+    },
+    {
+      id: 14,
+      title: "Tula State University (TSU)",
+      description: "Tula State University (TSU), established in 1930, is a prominent educational institution in Russia. It comprises nine faculties, including a dedicated Medical Institute.  ",
+      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSQlyrPNLCuvZQg4tZ2Iz3T54cDxXBH2t4w&s",
+      image: "https://avatars.mds.yandex.net/i?id=dc724584c4569cd850ee70bc06880de3_l-5723051-images-thumbs&n=13",
+      additionalInfo: "International Cooperation: TSU maintains partnerships with educational institutions in over 20 countries, including Armenia, Belarus, Bulgaria, Vietnam, Germany, Egypt, India, Spain, Italy, Jordan, Kazakhstan, Syria, Ukraine, and Montenegro.",
+      url: "https://www.rrecrussia.com/",
+    },
+    {
+      id: 15,
+      title: "Pskov State University (PSU)",
+      description: "Pskov State University (PSU), established in 1936, is a prominent educational institution in Russia. It comprises six multidisciplinary institutes, including the Institute of Medicine and Experimental Biology, which houses the medical faculty.   ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/en/6/68/Logo_of_Pskov_State_University.png",
+      image: "https://static.mk.ru/upload/entities/2021/10/08/10/photoreportsImages/detailPicture/96/28/9c/cf/2950299_9153142.jpg",
+      additionalInfo: "International Cooperation: PSU maintains partnerships with educational institutions in over 20 countries, including Armenia, Belarus, Bulgaria, Vietnam, Germany, Egypt, India, Spain, Italy, Jordan, Kazakhstan, Syria, Ukraine, and Montenegro. ",
+      url: "https://www.thedoctorsiea.in/",
+    },
+    {
+      id: 16,
+      title: "Volgograd State Medical University (VSMU)",
+      description: "Volgograd State Medical University (VSMU), established in 1935, is a prominent medical institution located in Volgograd, Russia. It is recognized as one of the top 10 medical universities in Russia, with a longstanding tradition of training medical professionals.    ",
+      authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV35SdAS0GfivWa-QphguoSOhOpRZZy8h6aQ&s",
+      image: "https://i.vuzopedia.ru/storage/app/uploads/public/5a1/e07/b63/5a1e07b631fc9132948187.jpg",
+      additionalInfo: "VSMU maintains partnerships with educational institutions in over 20 countries, including Armenia, Belarus, Bulgaria, Vietnam, Germany, Egypt, India, Spain, Italy, Jordan, Kazakhstan, Syria, Ukraine, and Montenegro. ",
+      url: "https://www.thedoctorsiea.in/",
+    },
   ];
 
   // Find the card by its ID
