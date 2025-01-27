@@ -193,7 +193,7 @@ function University() {
             />
             <div className="p-4 flex-1">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">{card.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">{card.description}</p>
+              <p className="text-gray-600 font-justify text-sm mb-4">{card.description}</p>
             </div>
             {/* Footer with author image and See More link */}
             <div className="flex justify-between items-center p-4 border-t">

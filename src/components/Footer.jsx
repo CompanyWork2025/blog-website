@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link, useLocation } from 'react-router-dom';  // Import useLocation from react-router-dom
 
 function Footer() {
+  const location = useLocation();  // Get the current route
+
   return (
     <footer className="footer bg-base-200 bg-black text-base-content rounded p-10">
-      <div className="grid grid-rows-3 grid-cols-1 text-white mt-20 lg:mt-28 gap-4 text-center">
+     <div className={`grid grid-rows-3 grid-cols-1 text-white ${location.pathname === '/' ? 'lg:mt-28 mt-20' : 'lg:mt-0 mt-0'} gap-4 text-center`}>
         {/* Footer Links (Top Center) */}
         <nav className="flex justify-center space-x-6">
           <Link to="/" className="link hover:text-purple-400 link-hover">Home</Link>
