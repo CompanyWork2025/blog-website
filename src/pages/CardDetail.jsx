@@ -130,7 +130,7 @@ const CardDetail = () => {
       authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSQlyrPNLCuvZQg4tZ2Iz3T54cDxXBH2t4w&s",
       image: "https://avatars.mds.yandex.net/i?id=dc724584c4569cd850ee70bc06880de3_l-5723051-images-thumbs&n=13",
       additionalInfo: "International Cooperation: TSU maintains partnerships with educational institutions in over 20 countries, including Armenia, Belarus, Bulgaria, Vietnam, Germany, Egypt, India, Spain, Italy, Jordan, Kazakhstan, Syria, Ukraine, and Montenegro.",
-      url: "https://www.rrecrussia.com/",
+      url: "http://www.thedoctorsiea.in/",
     },
     {
       id: 15,
