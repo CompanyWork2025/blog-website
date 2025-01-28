@@ -135,7 +135,39 @@ function University() {
       authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV35SdAS0GfivWa-QphguoSOhOpRZZy8h6aQ&s",
       image: "https://avatars.mds.yandex.net/i?id=94f804916c112e0fa57cb6217a5dfccf_l-9181372-images-thumbs&n=13",
       url: "http://www.thedoctorsiea.in/",
-    }
+    },
+    {
+      id: 17,
+      title: "North western state medical university named after I.I Mechnikov, Saint Petersburg ",
+      description: "North Western State Medical University named after I.I. Mechnikov is a prominent medical institution located in Saint Petersburg, Russia. The university is named in honor of Ilya Ilyich Mechnikov, a famous Russian immunologist and a Nobel laureate known for his pioneering work on the immune system.   ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logoszgmu.jpg/640px-Logoszgmu.jpg",
+      image: "https://avatars.mds.yandex.net/i?id=642eaabab1cf04445053719589837c67_l-5649169-images-thumbs&n=13",
+      url: "http://www.rrecrussia.com/",
+    }, 
+    {
+      id: 18,
+      title: "Saint Petersburg State Paediatric  Medical University  ",
+      description: "Saint Petersburg State Pediatric Medical University (SPbSPMU) is a leading institution in Russia focused on the education and training of specialists in the field of pediatric healthcare. It is one of the top medical universities in Russia, particularly renowned for its emphasis on pediatric education, childhood diseases, and child healthcare.   ",
+      authorImage: "https://upload.wikimedia.org/wikipedia/commons/a/a7/%D0%93%D0%BF%D0%BC%D1%83.jpg",
+      image: "https://yourchoice.re/wp-content/uploads/2022/05/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%B3%D8%A7%D9%86%D8%AA-%D8%A8%D8%B7%D8%B1%D8%B3%D8%A8%D8%B1%D8%BA-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9-%D9%84%D8%B7%D8%A8-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7-%D9%84.png",
+      url: "http://www.thedoctorsiea.in/",
+    },
+    {
+      id: 19,
+      title: "Immanuel Kant Baltic Federal University (Medical Faculty)",
+      description: "Immanuel Kant Baltic Federal University, located in Kaliningrad, Russia, offers high-quality medical programs that prepare students for a career in healthcare.   ",
+      authorImage: "https://facultetus.ru/images/universities/a79bc5e5fb24ac791ddd3745fc89a812.png",
+      image: "https://avatars.mds.yandex.net/i?id=57fe99377e55d7894f3931ef72e24d02_l-5436907-images-thumbs&n=13",
+      url: "http://www.rrecrussia.com/",
+    },
+    {
+      id: 20,
+      title: "Kemerovo State Medical University",
+      description: "Kemerovo State Medical University, located in Kemerovo, Russia, is one of the leading medical educational institutions in the country. The university offers a wide range of medical programs and degrees, focusing on clinical and research-oriented training in various medical fields. Known for its strong academic traditions, it provides students with the knowledge and skills needed for a career in medicine, while also playing a significant role in medical research and healthcare development.",
+      authorImage: "https://web.archive.org/web/20211215063212im_/https://kemsmu.ru/local/templates/pr.v1/images/logo.png", 
+      image: "https://hedclub.com/data/universities/364/main_image/88ic2R2jm33YVyuMHLXu.jpg",
+      url: "http://www.rrecrussia.com/"
+    },
   ];
 
   // Filter blogCards based on the search term
