@@ -186,7 +186,42 @@ const CardDetail = () => {
       additionalInfo: "Kemerovo State Medical University is integrated with several clinical facilities, providing students with ample practical experience. With a well-established focus on improving healthcare in the region, the university also fosters international partnerships, offering opportunities for global learning and career growth.",
       url: "http://www.rrecrussia.com/"
     },
-    
+    {
+      id: 21,
+      title: "Northern State Medical University (NSMU)",
+      description: "Northern State Medical University (NSMU) is a higher educational institution located in Arkhangelsk, Russia. It was founded in 1932 and is one of the leading medical universities in Russia, focusing on medical education, clinical training, and research.",
+      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi", 
+      image: "https://avatars.mds.yandex.net/get-altay/813485/2a0000015f1a7dbe727f435329811662f72b/XXL_height",
+      additionalInfo: "The university has a strong reputation for providing quality education and has established connections with medical institutions and universities worldwide. It is known for its advanced research in health sciences, particularly in areas related to public health and medical technology.",
+      url: "http://www.thedoctorsiea.in/"
+    },
+    {
+      id: 22,
+      title: "Far Eastern Federal University (FEFU)",
+      description: "Far Eastern Federal University (FEFU) is a prominent public university located in Vladivostok, Russia. It was founded in 1899 and has evolved into one of the major educational and research centers in the Russian Far East.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13", 
+      image: "https://images.pond5.com/fefu-territory-far-eastern-federal-footage-087058770_prevstill.jpeg",
+      additionalInfo: "FEFU is also recognized for its international student body, with students coming from various countries to study in both undergraduate and postgraduate programs. The university has numerous partnerships with academic institutions around the world, and it plays a central role in fostering academic exchanges and cooperation in the Asia-Pacific region.",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 23,
+      title: "Novosibirsk State Medical University (NSMU)",
+      description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
+      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png", 
+      image: "https://avatars.mds.yandex.net/get-altay/906486/2a000001656938677e98fd2f88d94031c554/orig",
+      additionalInfo: "Novosibirsk is Russia's third-largest city and serves as a major scientific, educational, and cultural hub in Siberia. It is well-connected by transport networks, making it accessible from both within Russia and internationally.",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 24,
+      title: "Kirov State Medical University (KSMU) ",
+      description: "Kirov State Medical University (KSMU) is a well-established public medical university located in Kirov, Russia. The university was founded in 1944 and has since built a strong reputation for providing high-quality medical education and contributing significantly to medical research, especially in the fields of clinical medicine, pharmaceutical sciences, and public health.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=c53e5075ac6481b0f5cc93309efefe07_l-5246355-images-thumbs&n=13", 
+      image: "http://155822.selcdn.ru/upload-8bfeca17cf9a3316f68775e6b5e44259/iblock/cdf/cdf61e793590f04951a383a928de4bc8/academia.jpg",
+      additionalInfo: "Kirov State Medical University is accredited by the Russian Ministry of Health and is recognized by various international medical organizations. This enables its graduates to work in the medical field internationally after meeting additional licensing or certification requirements.",
+      url: "http://www.rrecrussia.com/"
+    },
 
   ];
 

@@ -168,6 +168,38 @@ function University() {
       image: "https://hedclub.com/data/universities/364/main_image/88ic2R2jm33YVyuMHLXu.jpg",
       url: "http://www.rrecrussia.com/"
     },
+    {
+      id: 21,
+      title: "Northern State Medical University (NSMU)",
+      description: "Northern State Medical University (NSMU) is a higher educational institution located in Arkhangelsk, Russia. It was founded in 1932 and is one of the leading medical universities in Russia, focusing on medical education, clinical training, and research.",
+      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi", 
+      image: "https://rosvuz.ru/uploads/partition117/unit/2/931dd5484e41022169df681800a40b57.800_415.jpg?code=MjM5OTguODAwXzQxNQ==",
+      url: "http://www.thedoctorsiea.in/"
+    },
+    {
+      id: 22,
+      title: "Far Eastern Federal University (FEFU)",
+      description: "Far Eastern Federal University (FEFU) is a prominent public university located in Vladivostok, Russia. It was founded in 1899 and has evolved into one of the major educational and research centers in the Russian Far East.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13", 
+      image: "https://thumbs.dreamstime.com/b/far-eastern-federal-university-vladivostok-russia-july-dalnevostochny-federalny-universitet-dvfu-institution-higher-80400040.jpg",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 23,
+      title: "Novosibirsk State Medical University (NSMU)",
+      description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
+      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png", 
+      image: "https://i3.photo.2gis.com/images/branch/1/140737516391892_f12f.jpg",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 24,
+      title: "Kirov State Medical University (KSMU) ",
+      description: "Kirov State Medical University (KSMU) is a well-established public medical university located in Kirov, Russia. The university was founded in 1944 and has since built a strong reputation for providing high-quality medical education and contributing significantly to medical research, especially in the fields of clinical medicine, pharmaceutical sciences, and public health.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=c53e5075ac6481b0f5cc93309efefe07_l-5246355-images-thumbs&n=13", 
+      image: "https://mhost.kirovgma.ru/sites/default/files/news/2020/01-24/sozdanie-materiala-novost/kfuquk7gt2s.jpg",
+      url: "http://www.rrecrussia.com/"
+    },
   ];
 
   // Filter blogCards based on the search term
@@ -224,7 +256,7 @@ function University() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4 flex-1">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">{card.title}</h2>
+              <h2 className="text-xl font-semibold text-gray-800 text-justify mb-4">{card.title}</h2>
               <p className="text-gray-600 text-sm mb-4 text-justify">{card.description}</p>
             </div>
             {/* Footer with author image and See More link */}
