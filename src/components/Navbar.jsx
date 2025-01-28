@@ -25,8 +25,8 @@ function Navbar() {
             HOME
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
           </Link>
-          <Link to="/university" className="text-purple-400 font-semibold relative group">
-            UNIVERSITY
+          <Link to="/universities" className="text-purple-400 font-semibold relative group">
+            UNIVERSITIES
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300 ease-in-out"></span>
           </Link>
           <Link to="/news" className="text-purple-400 font-semibold relative group">
@@ -67,7 +67,7 @@ function Navbar() {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="space-y-4 py-4 text-center">
           <li><Link to="/" className="text-purple-600 hover:underline" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/university" className="text-purple-600 hover:underline" onClick={closeMenu}>University</Link></li>
+          <li><Link to="/universities" className="text-purple-600 hover:underline" onClick={closeMenu}>Universities</Link></li>
           <li><Link to="/news" className="text-purple-600 hover:underline" onClick={closeMenu}>News</Link></li>
         </ul>
       </div>

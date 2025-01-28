@@ -10,7 +10,7 @@ function Footer() {
         {/* Footer Links (Top Center) */}
         <nav className="flex justify-center space-x-6">
           <Link to="/" className="link hover:text-purple-400 link-hover">Home</Link>
-          <Link to="/university" className="link hover:text-purple-400 link-hover">University</Link>
+          <Link to="/universities" className="link hover:text-purple-400 link-hover">Universities</Link>
           <Link to="/news" className="link hover:text-purple-400 link-hover">News</Link>
         </nav>
         
