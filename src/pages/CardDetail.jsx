@@ -222,6 +222,60 @@ const CardDetail = () => {
       additionalInfo: "Kirov State Medical University is accredited by the Russian Ministry of Health and is recognized by various international medical organizations. This enables its graduates to work in the medical field internationally after meeting additional licensing or certification requirements.",
       url: "http://www.rrecrussia.com/"
     },
+    {
+      id: 25,
+      title: "Kabardino-Balkarian State University (Medical Faculty) ",
+      description: "Kabardino-Balkarian State University (KBSU) is a major public university located in Nalchik, the capital of the Kabardino-Balkar Republic in Russia. The university offers a range of educational programs in various fields, and the Medical Faculty is one of its prominent departments, dedicated to training future doctors and healthcare professionals.",
+      authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png", 
+      image: "https://www.edugainoverseas.com/wp-content/uploads/2019/12/Kabardino-Balkarian-State-University-Named-After-H.M.-Berbekov.png",
+      additionalInfo: "Graduates from KBSU’s Medical Faculty can pursue careers in diverse medical fields, ranging from hospital care and clinics to research and public health organizations. Many international graduates also choose to return to their home countries to practice medicine or continue their studies in specialized fields.",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 26,
+      title: "Kuban State Medical University (KSMU) ",
+      description: "Kuban State Medical University (KSMU) is one of Russia’s leading institutions for medical education, located in Krasnodar, the capital of the Krasnodar Krai in southern Russia. Established in 1920, KSMU has a rich history of training healthcare professionals and is known for its high educational standards, research contributions, and clinical training programs.",
+      authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75", 
+      image: "https://avatars.mds.yandex.net/i?id=8f68b0e55d6d907ca17c9578b2fca631_l-9107157-images-thumbs&n=13",
+      additionalInfo: " Kuban State Medical University can pursue various career paths in healthcare, ranging from clinical practice in hospitals and medical clinics to academic and research positions. International graduates often return to their home countries and practice medicine or continue their studies in specialized fields.",
+      url: "http://www.rrecrussia.com/"
+    },
+    {
+      id: 27,
+      title: "I.M. Sechenov Moscow Medical University ",
+      description: "I.M. Sechenov Moscow Medical University, commonly known as Sechenov University, is one of the oldest and most prestigious medical schools in Russia. It was founded in 1758 as the Medical Faculty of Moscow University and became an independent medical institution in 1866. ",
+      authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album", 
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Khamovniki_District%2C_Moscow%2C_Russia_-_panoramio_%28184%29.jpg",
+      additionalInfo: "The university is renowned for its high academic standards and research excellence in the fields of medicine, biology, and healthcare. It offers a wide range of medical programs, including undergraduate, postgraduate, and doctoral degrees, along with various specialized courses. It also actively engages in research in various areas such as physiology, neurology, immunology, and pharmacology. Sechenov University is a leading institution for training healthcare professionals, researchers, and medical specialists in Russia and internationally.",
+      url: "http://www.thedoctorsiea.in/"
+    },
+    {
+      id: 28,
+      title: "Siberian State Medical University (SSMU)  ",
+      description: "Siberian State Medical University (SSMU) is a well-respected medical institution located in Tomsk, Russia. It was founded in 1888 as the Tomsk Imperial University’s Medical Faculty and became an independent institution in 1963. It is known for its strong emphasis on medical education, research, and training healthcare professionals, and is one of the top medical universities in Siberia.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13", 
+      image: "https://avatars.mds.yandex.net/i?id=29780686aa13ade86daf8067d6c8dd5b_l-9856874-images-thumbs&n=13",
+      additionalInfo: "Siberian State Medical University has gained recognition for its strong international collaborations and partnerships with institutions worldwide, attracting students and professionals from different countries. The university is also involved in advanced clinical research, contributing to the development of medical science both in Russia and globally.",
+      url: "http://www.thedoctorsiea.in/"
+    },
+    {
+      id: 29,
+      title: "Dagestan State Medical University (DSMU) ",
+      description: "Dagestan State Medical University (DSMU) is a prominent medical university located in Makhachkala, the capital city of the Republic of Dagestan, Russia. Founded in 1932, DSMU has established itself as a major educational institution in the North Caucasus region, with a strong reputation for producing skilled medical professionals and contributing to the advancement of healthcare in the region.",
+      authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13", 
+      image: "https://www.navchetana.education/assets/images/universities/Russia/Dagestan-State-Medical-University.jpg",
+      description: "The university offers a broad array of programs in medicine, pharmacy, dentistry, and nursing. DSMU is known for its robust curriculum that combines theoretical learning with practical experience, ensuring that students are well-prepared for their careers in healthcare. The institution also offers postgraduate education and advanced training programs to ensure ongoing professional development.",
+      url: "http://www.thedoctorsiea.in/"
+    },
+    {
+      id: 30,
+      title: "Peoples' Friendship University of Russia (RUDN University) ",
+      description: "Peoples' Friendship University of Russia (RUDN University), located in Moscow, is one of the most prestigious and internationally recognized universities in Russia. Founded in 1960, it was originally established to provide higher education to students from Africa, Asia, and Latin America to foster international cooperation and understanding during the Cold War. ",
+      authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg", 
+      image: "https://avatars.mds.yandex.net/i?id=88526f7031d39df3a4c9e373cccdc2c6_l-9065879-images-thumbs&n=13",
+      description: "RUDN University places great emphasis on creating global partnerships and fosters numerous collaborations with universities and research institutions around the world. Many prominent individuals, including heads of state, diplomats, scholars, and professionals in various fields, have studied or taught at RUDN.",
+      url: "http://www.thedoctorsiea.in/"
+    },
 
   ];
 
