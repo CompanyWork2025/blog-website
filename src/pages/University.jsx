@@ -283,7 +283,7 @@ function University() {
   return (
     <>
       <Helmet>
-        <title>Russia Blog Website | Universities - 2025 Latest Blogs</title>
+        <title>Study MBBS in Russia 2025 | Universities - 2025 Latest Blogs</title>
         <meta name="description" content="Browse universities and read insightful articles about higher education and global universities on Blog Website." />
         <meta name="keywords" content="universities, higher education, college list, university rankings, educational articles" />
         <meta name="author" content="Blog Website Team" />
@@ -291,14 +291,14 @@ function University() {
 
         {/* Open Graph Meta Tags */}
         <meta property="og:type" content="Russia Blog Website" />
-        <meta property="og:title" content="Russia Blog Website | Universities - 2025 Latest Blogs" />
+        <meta property="og:title" content="Study MBBS in Russia 2025 | Universities - 2025 Latest Blogs" />
         <meta property="og:description" content="Browse universities and explore articles on higher education, rankings, and global university trends on Blog Website." />
         <meta property="og:image" content="/logo.jpg" />
         <meta property="og:url" content="https://blog-website-test.netlify.app/universities" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Russia Blog Website | Universities - 2025 Latest Blogs" />
+        <meta name="twitter:title" content="Study MBBS in Russia 2025 | Universities - 2025 Latest Blogs" />
         <meta name="twitter:description" content="Explore insightful articles on universities, higher education, and university rankings at Blog Website." />
         <meta name="twitter:image" content="/logo.jpg" />
       </Helmet>

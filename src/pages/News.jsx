@@ -32,7 +32,7 @@ const News = () => {
   return (
     <>
       <Helmet>
-        <title>Russia Blog Website | News & Updates - 2025 Latest Blogs</title>
+        <title>Study MBBS in Russia 2025 | News & Updates - 2025 Latest Blogs</title>
         <meta name="description" content="Stay updated with the latest news, events, and updates about the university and its functions." />
         <meta name="keywords" content="university news, functions, events, updates, academic news" />
         <meta name="author" content="Blog Website Team" />
@@ -40,14 +40,14 @@ const News = () => {
 
         {/* Open Graph Meta Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Russia Blog Website | News & Updates - 2025 Latest Blogs" />
+        <meta property="og:title" content="Study MBBS in Russia 2025 | News & Updates - 2025 Latest Blogs" />
         <meta property="og:description" content="Stay updated with the latest news, events, and updates about the university and its functions." />
         <meta property="og:image" content="/logo.jpg" />
         <meta property="og:url" content="https://blog-website-test.netlify.app/news" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Russia Blog Website | News & Updates - 2025 Latest Blogs" />
+        <meta name="twitter:title" content="Study MBBS in Russia 2025 | News & Updates - 2025 Latest Blogs" />
         <meta name="twitter:description" content="Stay updated with the latest news, events, and updates about the university and its functions." />
         <meta name="twitter:image" content="/logo.jpg" />
       </Helmet>
