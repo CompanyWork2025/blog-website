@@ -25,10 +25,10 @@ const Intro = () => {
     },
     {
       id: 4,
-      src: 'https://smapse.com/storage/2019/03/converted/825_585_unicamillus-medical-university-3.jpg',
+      src: 'https://avatars.mds.yandex.net/i?id=9600986cd3c762269cce8bacd8b487aa_l-9144733-images-thumbs&n=13',
       alt: 'Image 4',
-      title: 'UNICAMILLUS Medical University',
-      description: 'Study in a world-class medical university in Europe.',
+      title: 'Perm State Medical University (PSMU)',
+      description: 'Established in 1916, is a prominent medical institution located in Perm, Russia.',
     },
   ];
 
@@ -43,7 +43,7 @@ const Intro = () => {
           Explore top medical universities around the world and take your education to the next level. Discover more below!
         </p>
 
-        <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+        <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 shadow-lg py-4 gap-8 px-4">
           {images.map((image) => (
             <div
               key={image.id}
@@ -60,7 +60,7 @@ const Intro = () => {
                 <h2 className="text-xl text-left font-semibold text-white shadow-xl">
                   {image.title}
                 </h2>
-                <p className="text-sm text-gray-200 shadow-xl">{image.description}</p>
+                <p className="text-sm text-left text-gray-200 shadow-xl">{image.description}</p>
               </div>
             </div>
           ))}
