@@ -3,6 +3,7 @@ import background1 from "../../assets/3.jpg";
 import background2 from "../../assets/4.jpg";
 import background3 from "../../assets/5.avif";
 import background4 from "../../assets/6.webp";
+import 'animate.css';
 import mobileBackground1 from "../../assets/3.jpg";
 import mobileBackground2 from "../../assets/4.jpg";
 import mobileBackground3 from "../../assets/5.avif";
@@ -65,20 +66,19 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div> {/* Gradient overlay */}
-      
+
       <div
         className="hidden lg:block absolute lg:-mt-8 left-0 top-1/2 transform -translate-y-1/2 lg:px-24 p-6 text-white"
         style={{ zIndex: 10 }}
-
       >
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-expressa text-shadow-xl animate__animated animate__fadeInUp">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-expressa text-shadow-xl animate__animated animate__fadeInLeft">
           Why Russia
         </h1>
-        <p className="mt-6 text-lg sm:text-xl text-shadow-lg w-3/4 animate__animated animate__fadeInUp animate__delay-1s">
+        <p className="mt-6 text-lg sm:text-xl text-shadow-lg w-3/4 animate__animated animate__fadeInLeft animate__delay-1s">
           Discover the rich heritage and academic excellence of Russia's leading universities. Our blog brings you the latest insights, updates, and stories from students and academics who call Russia home.
         </p>
-
       </div>
+
       <div className="h-[15vh] md:h-[55vh] lg:h-[600px]">
         {/* Additional content can be placed here */}
       </div>

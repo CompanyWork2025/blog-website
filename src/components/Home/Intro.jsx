@@ -1,4 +1,5 @@
 import React from 'react';
+import 'animate.css';  // Import animate.css
 
 const Intro = () => {
   const images = [
@@ -35,11 +36,11 @@ const Intro = () => {
   return (
     <div className="flex justify-center items-center min-h-screen lg:-mt-40 bg-gray-50">
       <div className="w-[350px] lg:w-[1200px] bg-white rounded-t-2xl -mt-24 text-center py-10 z-20">
-        <h1 className="text-2xl lg:text-4xl font-expressa text-purple-400 font-semibold mb-6">
+        <h1 className="text-2xl lg:text-4xl font-expressa text-purple-400 font-semibold mb-6 animate__animated animate__fadeInDown animate__delay-1s">
           Welcome to Our Blog Website
         </h1>
 
-        <p className="lg:text-lg px-4 md:px-0 text-gray-700 mb-12">
+        <p className="lg:text-lg px-4 md:px-0 text-gray-700 mb-12 animate__animated animate__fadeInDown animate__delay-1.5s">
           Explore top medical universities around the world and take your education to the next level. Discover more below!
         </p>
 
@@ -57,10 +58,14 @@ const Intro = () => {
                 />
               </div>
               <div className="absolute bottom-0 z-20 p-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h2 className="text-xl text-left font-semibold text-white shadow-xl">
+                {/* Title first with no delay */}
+                <h2 className="text-xl text-left font-semibold text-white shadow-xl opacity-0 animate__animated animate__fadeInDown animate__delay-0.5s">
                   {image.title}
                 </h2>
-                <p className="text-sm text-left text-gray-200 shadow-xl">{image.description}</p>
+                {/* Description after title with longer delay */}
+                <p className="text-sm text-left text-gray-200 shadow-xl opacity-0 animate__animated animate__fadeInDown animate__delay-1s">
+                  {image.description}
+                </p>
               </div>
             </div>
           ))}
