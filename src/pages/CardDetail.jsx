@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const CardDetail = () => {
   const { id, url } = useParams();
@@ -181,7 +182,7 @@ const CardDetail = () => {
       id: 20,
       title: "Kemerovo State Medical University",
       description: "Kemerovo State Medical University, located in Kemerovo, Russia, is one of the leading medical educational institutions in the country. The university offers a wide range of medical programs and degrees, focusing on clinical and research-oriented training in various medical fields. Known for its strong academic traditions, it provides students with the knowledge and skills needed for a career in medicine, while also playing a significant role in medical research and healthcare development.",
-      authorImage: "https://web.archive.org/web/20211215063212im_/https://kemsmu.ru/local/templates/pr.v1/images/logo.png", 
+      authorImage: "https://web.archive.org/web/20211215063212im_/https://kemsmu.ru/local/templates/pr.v1/images/logo.png",
       image: "https://hedclub.com/data/universities/364/main_image/88ic2R2jm33YVyuMHLXu.jpg",
       additionalInfo: "Kemerovo State Medical University is integrated with several clinical facilities, providing students with ample practical experience. With a well-established focus on improving healthcare in the region, the university also fosters international partnerships, offering opportunities for global learning and career growth.",
       url: "http://www.rrecrussia.com/"
@@ -190,7 +191,7 @@ const CardDetail = () => {
       id: 21,
       title: "Northern State Medical University (NSMU)",
       description: "Northern State Medical University (NSMU) is a higher educational institution located in Arkhangelsk, Russia. It was founded in 1932 and is one of the leading medical universities in Russia, focusing on medical education, clinical training, and research.",
-      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi", 
+      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi",
       image: "https://avatars.mds.yandex.net/get-altay/813485/2a0000015f1a7dbe727f435329811662f72b/XXL_height",
       additionalInfo: "The university has a strong reputation for providing quality education and has established connections with medical institutions and universities worldwide. It is known for its advanced research in health sciences, particularly in areas related to public health and medical technology.",
       url: "http://www.thedoctorsiea.in/"
@@ -199,7 +200,7 @@ const CardDetail = () => {
       id: 22,
       title: "Far Eastern Federal University (FEFU)",
       description: "Far Eastern Federal University (FEFU) is a prominent public university located in Vladivostok, Russia. It was founded in 1899 and has evolved into one of the major educational and research centers in the Russian Far East.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13",
       image: "https://images.pond5.com/fefu-territory-far-eastern-federal-footage-087058770_prevstill.jpeg",
       additionalInfo: "FEFU is also recognized for its international student body, with students coming from various countries to study in both undergraduate and postgraduate programs. The university has numerous partnerships with academic institutions around the world, and it plays a central role in fostering academic exchanges and cooperation in the Asia-Pacific region.",
       url: "http://www.rrecrussia.com/"
@@ -208,7 +209,7 @@ const CardDetail = () => {
       id: 23,
       title: "Novosibirsk State Medical University (NSMU)",
       description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
-      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png", 
+      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png",
       image: "https://avatars.mds.yandex.net/get-altay/906486/2a000001656938677e98fd2f88d94031c554/orig",
       additionalInfo: "Novosibirsk is Russia's third-largest city and serves as a major scientific, educational, and cultural hub in Siberia. It is well-connected by transport networks, making it accessible from both within Russia and internationally.",
       url: "http://www.rrecrussia.com/"
@@ -217,7 +218,7 @@ const CardDetail = () => {
       id: 24,
       title: "Kirov State Medical University (KSMU) ",
       description: "Kirov State Medical University (KSMU) is a well-established public medical university located in Kirov, Russia. The university was founded in 1944 and has since built a strong reputation for providing high-quality medical education and contributing significantly to medical research, especially in the fields of clinical medicine, pharmaceutical sciences, and public health.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=c53e5075ac6481b0f5cc93309efefe07_l-5246355-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=c53e5075ac6481b0f5cc93309efefe07_l-5246355-images-thumbs&n=13",
       image: "http://155822.selcdn.ru/upload-8bfeca17cf9a3316f68775e6b5e44259/iblock/cdf/cdf61e793590f04951a383a928de4bc8/academia.jpg",
       additionalInfo: "Kirov State Medical University is accredited by the Russian Ministry of Health and is recognized by various international medical organizations. This enables its graduates to work in the medical field internationally after meeting additional licensing or certification requirements.",
       url: "http://www.rrecrussia.com/"
@@ -226,7 +227,7 @@ const CardDetail = () => {
       id: 25,
       title: "Kabardino-Balkarian State University (Medical Faculty) ",
       description: "Kabardino-Balkarian State University (KBSU) is a major public university located in Nalchik, the capital of the Kabardino-Balkar Republic in Russia. The university offers a range of educational programs in various fields, and the Medical Faculty is one of its prominent departments, dedicated to training future doctors and healthcare professionals.",
-      authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png", 
+      authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png",
       image: "https://www.edugainoverseas.com/wp-content/uploads/2019/12/Kabardino-Balkarian-State-University-Named-After-H.M.-Berbekov.png",
       additionalInfo: "Graduates from KBSU’s Medical Faculty can pursue careers in diverse medical fields, ranging from hospital care and clinics to research and public health organizations. Many international graduates also choose to return to their home countries to practice medicine or continue their studies in specialized fields.",
       url: "http://www.rrecrussia.com/"
@@ -235,7 +236,7 @@ const CardDetail = () => {
       id: 26,
       title: "Kuban State Medical University (KSMU) ",
       description: "Kuban State Medical University (KSMU) is one of Russia’s leading institutions for medical education, located in Krasnodar, the capital of the Krasnodar Krai in southern Russia. Established in 1920, KSMU has a rich history of training healthcare professionals and is known for its high educational standards, research contributions, and clinical training programs.",
-      authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75", 
+      authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75",
       image: "https://avatars.mds.yandex.net/i?id=8f68b0e55d6d907ca17c9578b2fca631_l-9107157-images-thumbs&n=13",
       additionalInfo: " Kuban State Medical University can pursue various career paths in healthcare, ranging from clinical practice in hospitals and medical clinics to academic and research positions. International graduates often return to their home countries and practice medicine or continue their studies in specialized fields.",
       url: "http://www.rrecrussia.com/"
@@ -244,7 +245,7 @@ const CardDetail = () => {
       id: 27,
       title: "I.M. Sechenov Moscow Medical University ",
       description: "I.M. Sechenov Moscow Medical University, commonly known as Sechenov University, is one of the oldest and most prestigious medical schools in Russia. It was founded in 1758 as the Medical Faculty of Moscow University and became an independent medical institution in 1866. ",
-      authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album", 
+      authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album",
       image: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Khamovniki_District%2C_Moscow%2C_Russia_-_panoramio_%28184%29.jpg",
       additionalInfo: "The university is renowned for its high academic standards and research excellence in the fields of medicine, biology, and healthcare. It offers a wide range of medical programs, including undergraduate, postgraduate, and doctoral degrees, along with various specialized courses. It also actively engages in research in various areas such as physiology, neurology, immunology, and pharmacology. Sechenov University is a leading institution for training healthcare professionals, researchers, and medical specialists in Russia and internationally.",
       url: "http://www.thedoctorsiea.in/"
@@ -253,7 +254,7 @@ const CardDetail = () => {
       id: 28,
       title: "Siberian State Medical University (SSMU)  ",
       description: "Siberian State Medical University (SSMU) is a well-respected medical institution located in Tomsk, Russia. It was founded in 1888 as the Tomsk Imperial University’s Medical Faculty and became an independent institution in 1963. It is known for its strong emphasis on medical education, research, and training healthcare professionals, and is one of the top medical universities in Siberia.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13",
       image: "https://avatars.mds.yandex.net/i?id=29780686aa13ade86daf8067d6c8dd5b_l-9856874-images-thumbs&n=13",
       additionalInfo: "Siberian State Medical University has gained recognition for its strong international collaborations and partnerships with institutions worldwide, attracting students and professionals from different countries. The university is also involved in advanced clinical research, contributing to the development of medical science both in Russia and globally.",
       url: "http://www.thedoctorsiea.in/"
@@ -262,7 +263,7 @@ const CardDetail = () => {
       id: 29,
       title: "Dagestan State Medical University (DSMU) ",
       description: "Dagestan State Medical University (DSMU) is a prominent medical university located in Makhachkala, the capital city of the Republic of Dagestan, Russia. Founded in 1932, DSMU has established itself as a major educational institution in the North Caucasus region, with a strong reputation for producing skilled medical professionals and contributing to the advancement of healthcare in the region.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13",
       image: "https://www.navchetana.education/assets/images/universities/Russia/Dagestan-State-Medical-University.jpg",
       description: "The university offers a broad array of programs in medicine, pharmacy, dentistry, and nursing. DSMU is known for its robust curriculum that combines theoretical learning with practical experience, ensuring that students are well-prepared for their careers in healthcare. The institution also offers postgraduate education and advanced training programs to ensure ongoing professional development.",
       url: "http://www.thedoctorsiea.in/"
@@ -271,7 +272,7 @@ const CardDetail = () => {
       id: 30,
       title: "Peoples' Friendship University of Russia (RUDN University) ",
       description: "Peoples' Friendship University of Russia (RUDN University), located in Moscow, is one of the most prestigious and internationally recognized universities in Russia. Founded in 1960, it was originally established to provide higher education to students from Africa, Asia, and Latin America to foster international cooperation and understanding during the Cold War. ",
-      authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg", 
+      authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg",
       image: "https://avatars.mds.yandex.net/i?id=88526f7031d39df3a4c9e373cccdc2c6_l-9065879-images-thumbs&n=13",
       description: "RUDN University places great emphasis on creating global partnerships and fosters numerous collaborations with universities and research institutions around the world. Many prominent individuals, including heads of state, diplomats, scholars, and professionals in various fields, have studied or taught at RUDN.",
       url: "http://www.thedoctorsiea.in/"
@@ -287,55 +288,78 @@ const CardDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
-      <div className="max-w-full sm:max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <>
+      <Helmet>
+        <title>{`${url}`}</title>
+        <meta name="description" content={`View detailed information about ${url} on Blog Website.`} />
+        <meta name="keywords" content="university, details, blog, education, card view" />
+        <meta name="author" content="Blog Website Team" />
+        <link rel="canonical" href={`https://blog-website-test.netlify.app/${url}`} />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="Russia Blog Website" />
+        <meta property="og:title" content={`${url}`} />
+        <meta property="og:description" content={`View detailed information about ${url} on Blog Website.`} />
+        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:url" content={`https://blog-website-test.netlify.app/${url}`} />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${url}`} />
+        <meta name="twitter:description" content={`View detailed information about ${url} on Blog Website.`} />
+        <meta name="twitter:image" content="/logo.jpg" />
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
+        <div className="max-w-full sm:max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
 
 
 
-        <div className="relative">
-          <img
-            src={card.image}
-            alt="University"
-            className="w-full h-72 sm:h-96 object-cover"
-          />
-          <div className="absolute bottom-4 left-4 p-4 bg-black bg-opacity-50 text-white rounded-lg">
-            <h1 className="text-2xl sm:text-4xl font-semibold">{card.title}</h1>
-          </div>
-        </div>
-
-        <div className="p-4 sm:p-8">
-          <p className="text-lg sm:text-xl text-gray-800 mb-4">{card.description}</p>
-          <p className="text-base sm:text-lg text-gray-600 mb-6">{card.additionalInfo}</p>
-
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
-            <div className="flex items-center mb-4 sm:mb-0">
-              <img
-                src={card.authorImage}
-                alt="University Logo"
-                className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover mr-4"
-              />
-              <p className="text-lg font-semibold">Learn more about {card.title}</p>
+          <div className="relative">
+            <img
+              src={card.image}
+              alt="University"
+              className="w-full h-72 sm:h-96 object-cover"
+            />
+            <div className="absolute bottom-4 left-4 p-4 bg-black bg-opacity-50 text-white rounded-lg">
+              <h1 className="text-2xl sm:text-4xl font-semibold">{card.title}</h1>
             </div>
-            <a
-              href={card.url || card.visitUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
-            >
-              Visit Site
-            </a>
-
           </div>
 
-          <hr className="my-6" />
+          <div className="p-4 sm:p-8">
+            <p className="text-lg sm:text-xl text-gray-800 mb-4">{card.description}</p>
+            <p className="text-base sm:text-lg text-gray-600 mb-6">{card.additionalInfo}</p>
 
-          <div className="mt-8">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4">About the University</h2>
-            <p className="text-base sm:text-lg">{card.additionalInfo}</p>
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+              <div className="flex items-center mb-4 sm:mb-0">
+                <img
+                  src={card.authorImage}
+                  alt="University Logo"
+                  className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover mr-4"
+                />
+                <p className="text-lg font-semibold">Learn more about {card.title}</p>
+              </div>
+              <a
+                href={card.url || card.visitUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
+              >
+                Visit Site
+              </a>
+
+            </div>
+
+            <hr className="my-6" />
+
+            <div className="mt-8">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4">About the University</h2>
+              <p className="text-base sm:text-lg">{card.additionalInfo}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

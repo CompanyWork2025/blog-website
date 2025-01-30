@@ -15,7 +15,7 @@ const WhyStudyInRussia = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16.588 2H7.412A2.413 2.413 0 005 4.412v15.176A2.412 2.412 0 007.412 22h9.176A2.412 2.412 0 0019 19.588V4.412A2.413 2.413 0 0016.588 2z" />
                   </svg>
                 </div>
-                <p className="text-lg font-medium">World-class universities and unforgettable student experience</p>
+                <p className="text-lg font-medium">Internationally recognized higher education system</p>
               </div>
 
               <div className="flex items-center lg:ml-24 lg:w-80 lg:h-36 p-4 border border-2 shadow-lg gap-4">
@@ -24,7 +24,7 @@ const WhyStudyInRussia = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 16V8m0-2a5.978 5.978 0 014-1.673A5.978 5.978 0 0116 6v2a5.978 5.978 0 014 1.673 5.978 5.978 0 01-4 9.654v2a5.978 5.978 0 01-4-1.673 5.978 5.978 0 01-4 1.673v-2a5.978 5.978 0 01-4-1.673 5.978 5.978 0 014-9.654V6A5.978 5.978 0 0116 4.326m-8-2A7.979 7.979 0 014 12v0m0 0a7.979 7.979 0 018-4.326v8.652" />
                   </svg>
                 </div>
-                <p className="text-xl font-medium">Unique scientific research and developments</p>
+                <p className="text-xl font-medium">Opportunity to explore a rich culture and heritage</p>
               </div>
 
               <div className="flex items-center lg:w-80 lg:h-36 p-4 border border-2 shadow-lg gap-4">
@@ -33,7 +33,7 @@ const WhyStudyInRussia = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m0 0H9m0 0l-3-3m3 3l3 3M21 12a9.003 9.003 0 00-8-8.982 9.001 9.001 0 00-8 8.98v1a9.002 9.002 0 008 8.983 9.002 9.002 0 008-8.984z" />
                   </svg>
                 </div>
-                <p className="text-xl font-medium">Government scholarships and support programs for students</p>
+                <p className="text-xl font-medium">Quality healthcare and affordable living standards</p>
               </div>
 
               <div className="flex items-center lg:ml-24 lg:w-80 lg:h-36 p-4 border border-2 shadow-lg gap-4">
@@ -42,7 +42,7 @@ const WhyStudyInRussia = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12v4m-8-4v4M7 16l10-4v4M21 6a2 2 0 11-4 0 2 2 0 114 0z" />
                   </svg>
                 </div>
-                <p className="text-xl font-medium">Internships and high career development prospects</p>
+                <p className="text-xl font-medium">Diverse career opportunities with a global network</p>
               </div>
             </div>
           </div>

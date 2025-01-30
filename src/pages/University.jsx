@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 function University() {
   const [searchTerm, setSearchTerm] = useState(""); // Search term for filtering
@@ -143,7 +144,7 @@ function University() {
       authorImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logoszgmu.jpg/640px-Logoszgmu.jpg",
       image: "https://avatars.mds.yandex.net/i?id=642eaabab1cf04445053719589837c67_l-5649169-images-thumbs&n=13",
       url: "http://www.rrecrussia.com/",
-    }, 
+    },
     {
       id: 18,
       title: "Saint Petersburg State Paediatric  Medical University  ",
@@ -164,7 +165,7 @@ function University() {
       id: 20,
       title: "Kemerovo State Medical University",
       description: "Kemerovo State Medical University, located in Kemerovo, Russia, is one of the leading medical educational institutions in the country. The university offers a wide range of medical programs and degrees, focusing on clinical and research-oriented training in various medical fields. Known for its strong academic traditions, it provides students with the knowledge and skills needed for a career in medicine, while also playing a significant role in medical research and healthcare development.",
-      authorImage: "https://web.archive.org/web/20211215063212im_/https://kemsmu.ru/local/templates/pr.v1/images/logo.png", 
+      authorImage: "https://web.archive.org/web/20211215063212im_/https://kemsmu.ru/local/templates/pr.v1/images/logo.png",
       image: "https://hedclub.com/data/universities/364/main_image/88ic2R2jm33YVyuMHLXu.jpg",
       url: "http://www.rrecrussia.com/"
     },
@@ -172,7 +173,7 @@ function University() {
       id: 21,
       title: "Northern State Medical University (NSMU)",
       description: "Northern State Medical University (NSMU) is a higher educational institution located in Arkhangelsk, Russia. It was founded in 1932 and is one of the leading medical universities in Russia, focusing on medical education, clinical training, and research.",
-      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi", 
+      authorImage: "https://ortsci.ru/files/styles/news1/public/news/1_13.jpg?itok=EfaDO7wi",
       image: "https://rosvuz.ru/uploads/partition117/unit/2/931dd5484e41022169df681800a40b57.800_415.jpg?code=MjM5OTguODAwXzQxNQ==",
       url: "http://www.thedoctorsiea.in/"
     },
@@ -180,7 +181,7 @@ function University() {
       id: 22,
       title: "Far Eastern Federal University (FEFU)",
       description: "Far Eastern Federal University (FEFU) is a prominent public university located in Vladivostok, Russia. It was founded in 1899 and has evolved into one of the major educational and research centers in the Russian Far East.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=2a00000179fda0901c94ea1dc791e66829ff-4712318-images-thumbs&n=13",
       image: "https://thumbs.dreamstime.com/b/far-eastern-federal-university-vladivostok-russia-july-dalnevostochny-federalny-universitet-dvfu-institution-higher-80400040.jpg",
       url: "http://www.rrecrussia.com/"
     },
@@ -188,7 +189,7 @@ function University() {
       id: 23,
       title: "Novosibirsk State Medical University (NSMU)",
       description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
-      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png", 
+      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png",
       image: "https://i3.photo.2gis.com/images/branch/1/140737516391892_f12f.jpg",
       url: "http://www.rrecrussia.com/"
     },
@@ -196,7 +197,7 @@ function University() {
       id: 24,
       title: "Novosibirsk State Medical University (NSMU)",
       description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
-      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png", 
+      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png",
       image: "https://i3.photo.2gis.com/images/branch/1/140737516391892_f12f.jpg",
       url: "http://www.rrecrussia.com/"
     },
@@ -204,7 +205,7 @@ function University() {
       id: 25,
       title: "Kabardino-Balkarian State University (Medical Faculty) ",
       description: "Kabardino-Balkarian State University (KBSU) is a major public university located in Nalchik, the capital of the Kabardino-Balkar Republic in Russia. The university offers a range of educational programs in various fields, and the Medical Faculty is one of its prominent departments, dedicated to training future doctors and healthcare professionals.",
-      authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png", 
+      authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png",
       image: "https://avatars.mds.yandex.net/get-altay/1429587/2a00000166a4d67e088ca77cd90e7d6285b4/XXL_height",
       url: "http://www.rrecrussia.com/"
     },
@@ -212,7 +213,7 @@ function University() {
       id: 26,
       title: "Kuban State Medical University (KSMU) ",
       description: "Kuban State Medical University (KSMU) is one of Russia’s leading institutions for medical education, located in Krasnodar, the capital of the Krasnodar Krai in southern Russia. Established in 1920, KSMU has a rich history of training healthcare professionals and is known for its high educational standards, research contributions, and clinical training programs.",
-      authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75", 
+      authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75",
       image: "https://avatars.mds.yandex.net/i?id=09ebe901c50c25c4280bf7805a1bb19a_l-4143030-images-thumbs&n=13",
       url: "http://www.rrecrussia.com/"
     },
@@ -220,7 +221,7 @@ function University() {
       id: 27,
       title: "I.M. Sechenov Moscow Medical University ",
       description: "I.M. Sechenov Moscow Medical University, commonly known as Sechenov University, is one of the oldest and most prestigious medical schools in Russia. It was founded in 1758 as the Medical Faculty of Moscow University and became an independent medical institution in 1866. ",
-      authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album", 
+      authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album",
       image: "https://avatars.mds.yandex.net/i?id=5f8289baa93dd9276b7550ae882e369d_l-7593915-images-thumbs&n=13",
       url: "http://www.thedoctorsiea.in/"
     },
@@ -228,7 +229,7 @@ function University() {
       id: 28,
       title: "Siberian State Medical University (SSMU)  ",
       description: "Siberian State Medical University (SSMU) is a well-respected medical institution located in Tomsk, Russia. It was founded in 1888 as the Tomsk Imperial University’s Medical Faculty and became an independent institution in 1963. It is known for its strong emphasis on medical education, research, and training healthcare professionals, and is one of the top medical universities in Siberia.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13",
       image: "https://avatars.mds.yandex.net/i?id=5dbf194cc2e8cfaa408fbe053d9ea2c9_l-5310530-images-thumbs&n=13",
       url: "http://www.thedoctorsiea.in/"
     },
@@ -236,7 +237,7 @@ function University() {
       id: 29,
       title: "Dagestan State Medical University (DSMU) ",
       description: "Dagestan State Medical University (DSMU) is a prominent medical university located in Makhachkala, the capital city of the Republic of Dagestan, Russia. Founded in 1932, DSMU has established itself as a major educational institution in the North Caucasus region, with a strong reputation for producing skilled medical professionals and contributing to the advancement of healthcare in the region.",
-      authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13", 
+      authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13",
       image: "https://static.mk.ru/upload/entities/2021/04/26/14/articles/facebookPicture/73/f6/c8/50/4e2cdc599918af3b45f5c32b88f7dae2.jpg",
       url: "http://www.thedoctorsiea.in/"
     },
@@ -244,112 +245,134 @@ function University() {
       id: 30,
       title: "Peoples' Friendship University of Russia (RUDN University) ",
       description: "Peoples' Friendship University of Russia (RUDN University), located in Moscow, is one of the most prestigious and internationally recognized universities in Russia. Founded in 1960, it was originally established to provide higher education to students from Africa, Asia, and Latin America to foster international cooperation and understanding during the Cold War. ",
-      authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg", 
+      authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg",
       image: "https://avatars.mds.yandex.net/i?id=f014cc4e34f727fe4e35f7aba052d05e_l-2769679-images-thumbs&n=13",
       url: "http://www.thedoctorsiea.in/"
     },
   ];
 
   // Filter blogCards based on the search term, reverse the order after filtering
-const filteredBlogCards = blogCards
-.reverse() // Reverse the order to load from the last ID
-.filter((card) =>
-  card.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  card.description.toLowerCase().includes(searchTerm.toLowerCase())
-);
+  const filteredBlogCards = blogCards
+    .reverse() // Reverse the order to load from the last ID
+    .filter((card) =>
+      card.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      card.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-// Get the current page's blog posts
-const indexOfLastPost = currentPage * postsPerPage;
-const indexOfFirstPost = indexOfLastPost - postsPerPage;
-const currentPosts = filteredBlogCards.slice(indexOfFirstPost, indexOfLastPost);
+  // Get the current page's blog posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = filteredBlogCards.slice(indexOfFirstPost, indexOfLastPost);
 
-// Handle the Next and Previous button logic
-const nextPage = () => {
-if (currentPage < Math.ceil(filteredBlogCards.length / postsPerPage)) {
-  setCurrentPage(currentPage + 1);
-  window.scrollTo(0, 0);
-}
-};
+  // Handle the Next and Previous button logic
+  const nextPage = () => {
+    if (currentPage < Math.ceil(filteredBlogCards.length / postsPerPage)) {
+      setCurrentPage(currentPage + 1);
+      window.scrollTo(0, 0);
+    }
+  };
 
-const prevPage = () => {
-if (currentPage > 1) {
-  setCurrentPage(currentPage - 1);
-  window.scrollTo(0, 0);
-}
-};
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      window.scrollTo(0, 0);
+    }
+  };
 
 
   return (
-    <div className="min-h-screen lg:px-20 bg-gray-100 py-8">
-    <div className="text-center mb-12">
-      <h1 className="lg:text-5xl text-2xl font-bold text-purple-400 mb-6">University Blog: Explore Top Universities</h1>
-      <p className="lg:text-xl text-md px-4 text-gray-700 mb-8">
-        Discover the prestigious universities in Russia with a rich history, top-tier programs, cutting-edge research, and opportunities for students from all around the world. Dive into the world of academic excellence, innovation, and growth.
-      </p>
-  
-      {/* Search Bar */}
-      <input
-        type="text"
-        placeholder="Search blogs..."
-        className="px-4 py-2 w-80 lg:w-1/3 border border-2 rounded-md"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-    </div>
-  
-    {/* Grid Layout for Blog Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-8">
-      {/* Mapping through filtered blogCards array */}
-      {currentPosts.map((card, index) => (
-        <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-          <img
-            src={card.image}
-            alt="Blog image"
-            className="w-full h-48 object-cover"
+    <>
+      <Helmet>
+        <title>Russia Blog Website | Universities - 2025 Latest Blogs</title>
+        <meta name="description" content="Browse universities and read insightful articles about higher education and global universities on Blog Website." />
+        <meta name="keywords" content="universities, higher education, college list, university rankings, educational articles" />
+        <meta name="author" content="Blog Website Team" />
+        <link rel="canonical" href="https://blog-website-test.netlify.app/universities" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="Russia Blog Website" />
+        <meta property="og:title" content="Russia Blog Website | Universities - 2025 Latest Blogs" />
+        <meta property="og:description" content="Browse universities and explore articles on higher education, rankings, and global university trends on Blog Website." />
+        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:url" content="https://blog-website-test.netlify.app/universities" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Russia Blog Website | Universities - 2025 Latest Blogs" />
+        <meta name="twitter:description" content="Explore insightful articles on universities, higher education, and university rankings at Blog Website." />
+        <meta name="twitter:image" content="/logo.jpg" />
+      </Helmet>
+
+      <div className="min-h-screen lg:px-20 bg-gray-100 py-8">
+        <div className="text-center mb-12">
+          <h1 className="lg:text-5xl text-2xl font-bold text-purple-400 mb-6">University Blog: Explore Top Universities</h1>
+          <p className="lg:text-xl text-md px-4 text-gray-700 mb-8">
+            Discover the prestigious universities in Russia with a rich history, top-tier programs, cutting-edge research, and opportunities for students from all around the world. Dive into the world of academic excellence, innovation, and growth.
+          </p>
+
+          {/* Search Bar */}
+          <input
+            type="text"
+            placeholder="Search blogs..."
+            className="px-4 py-2 w-80 lg:w-1/3 border border-2 rounded-md"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <div className="p-4 flex-1">
-            <h2 className="text-xl font-semibold text-gray-800 text-justify mb-4">{card.title}</h2>
-            <p className="text-gray-600 text-sm mb-4 text-justify">{card.description}</p>
-          </div>
-          {/* Footer with author image and See More link */}
-          <div className="flex justify-between items-center p-4 border-t">
-            <div className="w-10 h-10 rounded-full overflow-hidden">
-              <img
-                src={card.authorImage}
-                alt="Author"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <Link
-              to={`/card/${card.id}/${encodeURIComponent(card.url)}`} // Concatenate card.id with the dynamic URL part
-              className="text-blue-500 hover:text-blue-700 text-sm"
-            >
-              See More
-            </Link>
-          </div>
         </div>
-      ))}
-    </div>
-  
-    {/* Pagination Controls */}
-    <div className="flex justify-center items-center mt-8">
-      <button
-        onClick={prevPage}
-        className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-2"
-        disabled={currentPage === 1}
-      >
-        Previous
-      </button>
-      <button
-        onClick={nextPage}
-        className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-0"
-        disabled={currentPage === Math.ceil(filteredBlogCards.length / postsPerPage)}
-      >
-        Next
-      </button>
-    </div>
-  </div>
-  
+
+        {/* Grid Layout for Blog Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-8">
+          {/* Mapping through filtered blogCards array */}
+          {currentPosts.map((card, index) => (
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+              <img
+                src={card.image}
+                alt="Blog image"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 flex-1">
+                <h2 className="text-xl font-semibold text-gray-800 text-justify mb-4">{card.title}</h2>
+                <p className="text-gray-600 text-sm mb-4 text-justify">{card.description}</p>
+              </div>
+              {/* Footer with author image and See More link */}
+              <div className="flex justify-between items-center p-4 border-t">
+                <div className="w-10 h-10 rounded-full overflow-hidden">
+                  <img
+                    src={card.authorImage}
+                    alt="Author"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <Link
+                  to={`/card/${card.id}/${encodeURIComponent(card.url)}`} // Concatenate card.id with the dynamic URL part
+                  className="text-blue-500 hover:text-blue-700 text-sm"
+                >
+                  See More
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Pagination Controls */}
+        <div className="flex justify-center items-center mt-8">
+          <button
+            onClick={prevPage}
+            className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-2"
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          <button
+            onClick={nextPage}
+            className="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 mx-0"
+            disabled={currentPage === Math.ceil(filteredBlogCards.length / postsPerPage)}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 
