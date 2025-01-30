@@ -18,7 +18,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % 4);
-    }, 7000);  // Lengthened transition interval for a more calming effect
+    }, 7000);
 
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
@@ -26,7 +26,7 @@ const Hero = () => {
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setBgColor("rgba(0, 0, 0, 0.35)"); // Stronger overlay when scrolling
+        setBgColor("rgba(0, 0, 0, 0.35)");
         setBgOpacity(0.8);
       } else {
         setBgColor("transparent");
@@ -52,20 +52,18 @@ const Hero = () => {
     : mobileBackgrounds[currentIndex];
 
   return (
-    <div
-      className="relative w-full bg-fixed transition-all duration-1000 ease-in-out"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        minHeight: isLargeScreen ? "60vh" : "30vh",
-        transition: "background-color 0.3s ease, opacity 0.3s ease",
-        backgroundColor: bgColor,
-        opacity: bgOpacity,
-      }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div> {/* Gradient overlay */}
+    <div className="relative w-full overflow-hidden" style={{ minHeight: isLargeScreen ? "60vh" : "30vh" }}>
+      <div
+        className="absolute inset-0 transition-transform duration-1000 ease-in-out"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover", // Ensures the image covers the container
+          backgroundPosition: "center center", // Keeps the image centered
+          backgroundColor: bgColor,
+          opacity: bgOpacity,
+          transform: "scale(1)", // Default scale value, will zoom in and out
+        }}
+      ></div>
 
       <div
         className="hidden lg:block absolute lg:-mt-8 left-0 top-1/2 transform -translate-y-1/2 lg:px-24 p-6 text-white"
@@ -79,7 +77,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="h-[15vh] md:h-[55vh] lg:h-[600px]">
+      <div className="h-[15vh] md:h-[55vh] lg:h-[700px]">
         {/* Additional content can be placed here */}
       </div>
     </div>
