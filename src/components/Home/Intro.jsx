@@ -40,9 +40,16 @@ const Intro = () => {
           Welcome to Our Blog Website
         </h1>
 
-        <p className="lg:text-lg px-4 md:px-0 text-gray-700 mb-12 animate__animated animate__fadeInDown animate__delay-1.5s">
+        <p className="lg:text-lg px-4 md:px-0 lg:-mt-1 text-gray-700 mb-4 animate__animated animate__fadeInDown animate__delay-1.5s">
           Explore top medical universities around the world and take your education to the next level. Discover more below!
         </p>
+
+        {/* Admission Helpline with color cycling animation */}
+        <p className="text-lg font-semibold text-gray-900 animate__animated animate__fadeIn animate__delay-2s">
+          Admission Helpline:
+          <a href="tel:+79515190376" className="helpline-number animate-colorCycle"> +7 951 519‑03‑76</a>
+        </p>
+
 
         <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 shadow-lg py-4 gap-8 px-4">
           {images.map((image) => (

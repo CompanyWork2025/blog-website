@@ -10,15 +10,15 @@ const FAQ = () => {
   const faqData = [
     {
       question: "What are the top universities in Russia?",
-      answer: "Some of the top universities in Russia include Lomonosov Moscow State University, St. Petersburg State University, and Novosibirsk State University.",
+      answer: "Some of the top universities in Russia include Lomonosov Moscow State University, St. Petersburg State University, and Novosibirsk State University,Rostov State Medical University, Kazan State Medical University, Kursk State Medical University, Crimea Federal University, Southern Federa, Peoples' Friendship University of Russia (RUDN University), I.M. Sechenov Moscow Medical University, Northern State Medical University (NSMU), Saint Petersburg State Paediatric  Medical University, Immanuel Kant Baltic Federal University (Medical Faculty),  Novosibirsk State Medical University (NSMU) ",
     },
     {
       question: "How do I apply to a Russian university?",
-      answer: "To apply to a Russian university, you typically need to complete an online application, provide your academic records, and prove proficiency in Russian or English, depending on the program.",
+      answer: "To apply to a Russian university, you typically need to complete an online application, provide your academic records, and prove proficiency in Russian or English, depending on the program. For more information and guidance you can contact official representative at ‪+7 951 519‑03‑76",
     },
     {
       question: "What are the living costs for students in Russia?",
-      answer: "The living costs in Russia vary by location, but on average, students can expect to spend between $300 to $600 per month depending on the city and lifestyle.",
+      answer: "The living costs in Russia vary by location, but on average, students can expect to spend between $200 to 350$ per month depending on the city and lifestyle.",
     },
     {
       question: "Do I need to know Russian to study in Russia?",
@@ -42,7 +42,7 @@ const FAQ = () => {
     },
     {
       question: "How long do university degrees take in Russia?",
-      answer: "A bachelor's degree in Russia typically takes 4 years, while a master's degree generally takes 2 years. Some programs may have different durations depending on the field of study.",
+      answer: "A bachelor's degree in Russia typically takes 4 & 6 years, while a master's degree generally takes 2 years. Some programs may have different durations depending on the field of study.",
     },
     {
       question: "Are there entrance exams for Russian universities?",
@@ -50,7 +50,7 @@ const FAQ = () => {
     },
     {
       question: "What are the best student cities in Russia?",
-      answer: "Moscow, St. Petersburg, Kazan, and Novosibirsk are considered some of the best cities for international students due to their high-quality education and vibrant student life.",
+      answer: "Moscow, Kazan, Saint Petersburg, Rostov-on-Don, Yekaterinburg, Simferopol, Kursk are considered some of the best cities  for International students due to their high quality education and vibrant student life.",
     },
     {
       question: "Is healthcare free for students in Russia?",
@@ -58,11 +58,11 @@ const FAQ = () => {
     },
     {
       question: "How do I get a student visa for Russia?",
-      answer: "To obtain a student visa for Russia, you need to apply through the Russian consulate in your country, with documents such as your invitation letter from the university and proof of funds for living expenses.",
+      answer: "To obtain a student visa for Russia, you need to apply through the Russian consulate in your country, with documents such as your invitation letter from the university and proof of funds for living expenses.         For more details or guidance you can contact official representative of universities at ‪+7 951 519‑03‑76",
     },
     {
       question: "What is the quality of education in Russian universities?",
-      answer: "Russia has many high-quality universities, particularly in science, technology, and engineering fields. Lomonosov Moscow State University ranks among the top 100 in global rankings.",
+      answer: "Russia has many high quality education universities particularly in medical, technology and in engineering fields. Many universities of Russian Federation rank among top 100 in global rankings.",
     },
     {
       question: "Can I stay in Russia after my studies?",
