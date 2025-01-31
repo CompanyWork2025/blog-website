@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import University from "./pages/University";
 import CardDetail from './pages/CardDetail';
 import News from "./pages/News";
+import Apply from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/universities" element={<University />} />
         <Route path="/card/:id/:url" element={<CardDetail />} />
+        <Route path="/apply" element={<Apply />} />
         <Route path="/news" element={<News />} />
       </Routes>
       <Footer />

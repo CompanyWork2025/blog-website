@@ -344,7 +344,7 @@ function University() {
                   />
                 </div>
                 <Link
-                  to={`/card/${card.id}/${encodeURIComponent(card.url)}`} // Concatenate card.id with the dynamic URL part
+                  to={`/card/${card.id}/${card.title}`} // Concatenate card.id with the dynamic URL part
                   className="text-blue-500 hover:text-blue-700 text-sm"
                 >
                   See More
