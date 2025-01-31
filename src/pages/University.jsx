@@ -278,12 +278,12 @@ function University() {
       window.scrollTo(0, 0);
     }
   };
-  // Utility function to convert title to a slug
-  const createSlug = (title) => {
-    return title
+  // Function to create a slug for the title
+  const createSlug = (str) => {
+    return str
       .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with a dash
-      .replace(/(^-|-$)/g, ''); // Remove leading and trailing dashes
+      .replace(/[^a-z0-9]+/g, '-')   // Replace non-alphanumeric characters with dashes
+      .replace(/(^-|-$)/g, '');       // Remove leading/trailing dashes
   };
 
 
@@ -351,11 +351,13 @@ function University() {
                   />
                 </div>
                 <Link
-                  to={`/${createSlug(card.title)}/${encodeURIComponent(card.url)}`}
+                  key={card.id}
+                  to={`/${createSlug(card.title)}/${createSlug(card.url)}`} // Create slugs for both title and URL
                   className="text-blue-500 hover:text-blue-700 text-sm"
                 >
                   See More
                 </Link>
+
               </div>
             </div>
           ))}

@@ -2,18 +2,19 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-const CardDetail = () => {
-  const { slug, url } = useParams(); // Get the slug and URL from the route
-  const decodedUrl = decodeURIComponent(url); // Decode the URL parameter
 
-  // Utility function to convert title to a slug
-  const createSlug = (title) => {
-    return title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with a dash
-      .replace(/(^-|-$)/g, ''); // Remove leading and trailing dashes
+const CardDetail = () => {
+  const { slug, url } = useParams();  // Get slug and URL from params
+  const decodedUrl = decodeURIComponent(url); // Decode URL if necessary
+
+  // Function to reconstruct the original URL
+  const reconstructUrl = (urlSlug) => {
+    return urlSlug.replace(/-/g, '.').replace(/~/, '://');  // Convert back to the original URL format
   };
 
+  const createSlug = (title) => {
+    return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  };
 
   // Blog card data
   const blogCards = [
@@ -349,8 +350,7 @@ const CardDetail = () => {
                 />
                 <p className="text-lg font-semibold">Learn more about {card.title}</p>
               </div>
-              <a
-                href={card.url || card.visitUrl}
+              <a href={reconstructUrl(url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
