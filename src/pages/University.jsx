@@ -278,6 +278,13 @@ function University() {
       window.scrollTo(0, 0);
     }
   };
+  // Utility function to convert title to a slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with a dash
+      .replace(/(^-|-$)/g, ''); // Remove leading and trailing dashes
+  };
 
 
   return (
@@ -344,7 +351,7 @@ function University() {
                   />
                 </div>
                 <Link
-                  to={`/card/${card.id}/${card.title}`} // Concatenate card.id with the dynamic URL part
+                  to={`/${createSlug(card.title)}/${encodeURIComponent(card.url)}`}
                   className="text-blue-500 hover:text-blue-700 text-sm"
                 >
                   See More

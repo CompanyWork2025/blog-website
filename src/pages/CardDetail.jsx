@@ -3,7 +3,17 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const CardDetail = () => {
-  const { id, url } = useParams();
+  const { slug, url } = useParams(); // Get the slug and URL from the route
+  const decodedUrl = decodeURIComponent(url); // Decode the URL parameter
+
+  // Utility function to convert title to a slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with a dash
+      .replace(/(^-|-$)/g, ''); // Remove leading and trailing dashes
+  };
+
 
   // Blog card data
   const blogCards = [
@@ -280,34 +290,34 @@ const CardDetail = () => {
 
   ];
 
-  // Find the card by its ID
-  const card = blogCards.find(card => card.id === parseInt(id));
+  // Find the card based on the slug
+  const card = blogCards.find((card) => createSlug(card.title) === slug);
 
   if (!card) {
-    return <div className="text-center p-8">Card not found</div>;
+    return <div>Card not found</div>; // If the card is not found, show this message
   }
 
   return (
     <>
       <Helmet>
-        <title>{`${url}`}</title>
-        <meta name="description" content={`View detailed information about ${url} on Blog Website.`} />
+        <title>{card.title}</title> {/* Set the title dynamically from card data */}
+        <meta name="description" content={`View detailed information about ${card.title} on Blog Website.`} />
         <meta name="keywords" content="university, details, blog, education, card view" />
         <meta name="author" content="Blog Website Team" />
-        <link rel="canonical" href={`https://blog-website-test.netlify.app/${url}`} />
+        <link rel="canonical" href={`https://blog-website-test.netlify.app/card/${card.url}`} />
 
         {/* Open Graph Meta Tags */}
-        <meta property="og:type" content="Russia Blog Website" />
-        <meta property="og:title" content={`${url}`} />
-        <meta property="og:description" content={`View detailed information about ${url} on Blog Website.`} />
-        <meta property="og:image" content="/logo.jpg" />
-        <meta property="og:url" content={`https://blog-website-test.netlify.app/${url}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={card.title} />
+        <meta property="og:description" content={`View detailed information about ${card.title} on Blog Website.`} />
+        <meta property="og:image" content={card.image} />
+        <meta property="og:url" content={`https://blog-website-test.netlify.app/card/${card.url}`} />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${url}`} />
-        <meta name="twitter:description" content={`View detailed information about ${url} on Blog Website.`} />
-        <meta name="twitter:image" content="/logo.jpg" />
+        <meta name="twitter:title" content={card.title} />
+        <meta name="twitter:description" content={`View detailed information about ${card.title} on Blog Website.`} />
+        <meta name="twitter:image" content={card.image} />
       </Helmet>
 
       <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
