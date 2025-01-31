@@ -298,6 +298,7 @@ const CardDetail = () => {
     return <div>Card not found</div>; // If the card is not found, show this message
   }
 
+
   return (
     <>
       <Helmet>
@@ -350,13 +351,16 @@ const CardDetail = () => {
                 />
                 <p className="text-lg font-semibold">Learn more about {card.title}</p>
               </div>
-              <a href={reconstructUrl(url)}
+              <a
+                href={card.url || card.visitUrl} // Use card.url if it exists, otherwise fallback to card.visitUrl
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 text-center"
               >
                 Visit Site
               </a>
+
+
 
             </div>
 
