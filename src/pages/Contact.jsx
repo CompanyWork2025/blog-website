@@ -5,7 +5,9 @@ const ContactPage = () => {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
-        email: "",
+        city: "",
+        country: "",
+        university: "",
         phone: "",
         message: "",
         termsAccepted: false,
@@ -32,8 +34,9 @@ const ContactPage = () => {
         let formErrors = {};
         if (!formData.firstName) formErrors.firstName = "First name is required";
         if (!formData.lastName) formErrors.lastName = "Last name is required";
-        if (!formData.email) formErrors.email = "Email is required";
-        else if (!/\S+@\S+\.\S+/.test(formData.email)) formErrors.email = "Email is invalid";
+        if (!formData.city) formErrors.city = "City is required";
+        if (!formData.country) formErrors.country = "Country is required";
+        if (!formData.university) formErrors.university = "University is required";
         if (!formData.phone) formErrors.phone = "Phone number is required";
         else if (!/^\+?[0-9]{10,15}$/.test(formData.phone)) formErrors.phone = "Phone number is invalid";
         if (!formData.message) formErrors.message = "Message is required";
@@ -55,7 +58,7 @@ const ContactPage = () => {
             // Send email via EmailJS
             emailjs
                 .sendForm(
-                    "YOUR_SERVICE_ID",  // Your Service ID
+                    "service_nqcxku8",  // Your Service ID
                     "YOUR_TEMPLATE_ID",  // Your Template ID
                     e.target,  // The form
                     "YOUR_PUBLIC_KEY"   // Your Public Key
@@ -67,7 +70,9 @@ const ContactPage = () => {
                         setFormData({
                             firstName: "",
                             lastName: "",
-                            email: "",
+                            city: "",
+                            country: "",
+                            university: "",
                             phone: "",
                             message: "",
                             termsAccepted: false, // Reset the checkbox state
@@ -88,7 +93,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <div className="bg-gradient-to-b from-gray-100 to-white md:max-h-[140vh] min-h-[20vh] flex flex-col items-center justify-center py-10 lg:px-4">
+            <div className="bg-gradient-to-b from-gray-100 to-white md:max-h-[130vh] min-h-[20vh] flex flex-col items-center justify-center py-6 lg:py-10 lg:px-4">
 
                 {/* Section for "GET IN TOUCH!" heading and info */}
                 <div className="w-full text-center lg:text-left md:space-y-6 lg:-mt-8 md:-mb-14 p-2 lg:p-14">
@@ -144,7 +149,7 @@ const ContactPage = () => {
 
 
                     {/* Right Side - Contact Form */}
-                    <div className="lg:w-1/2 mt-10 md:mt-8 w-full flex justify-center">
+                    <div className="lg:w-1/2 mt-10 md:mt-8 lg:-mt-10 w-full flex justify-center">
                         <form onSubmit={handleSubmit} className="bg-white p-6 md:p-8 rounded-3xl border-2 border-[#44006C] shadow-sm w-full flex-grow">
                             {/* Name Fields */}
                             <div className="flex space-x-4 mb-4">
@@ -180,56 +185,59 @@ const ContactPage = () => {
                                 </div>
                             </div>
 
-                             {/* Name Fields */}
-                             <div className="flex space-x-4 mb-4">
+                            {/* City & Country Fields */}
+                            <div className="flex space-x-4 mb-4">
                                 <div className="w-1/2 relative">
-                                    <label className="block font-semibold mb-2 text-[#44006C]">City & Country  <span className="text-red-500 ml-1">*</span> </label>
+                                    <label className="block font-semibold mb-2 text-[#44006C]">City <span className="text-red-500 ml-1">*</span> </label>
                                     <div className="flex items-center">
-                                        <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-modern-black-city-icon-vector-png-png-image_5709711.png" alt="icon" className="w-4 h-6 top-12 absolute left-3" />
+                                        <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-modern-black-city-icon-vector-png-png-image_5709711.png" alt="city icon" className="w-4 h-6 top-12 absolute left-3" />
                                         <input
                                             type="text"
-                                            name="City"
-                                            value={formData.firstName}
+                                            name="city"
+                                            value={formData.city}
                                             onChange={handleInputChange}
                                             placeholder="City"
-                                            className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.firstName ? "border-red-500" : ""}`}
+                                            className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.city ? "border-red-500" : ""}`}
                                         />
                                     </div>
-                                    {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName}</p>}
+                                    {errors.city && <p className="text-red-500 text-sm">{errors.city}</p>}
                                 </div>
+
                                 <div className="w-1/2 relative">
-                                    <label className="block mb-2 text-[#44006C]">&nbsp;</label>
+                                    <label className="block font-semibold mb-2 text-[#44006C]">Country <span className="text-red-500 ml-1">*</span> </label>
                                     <div className="flex items-center">
-                                        <img src="https://static.thenounproject.com/png/2450449-200.png" alt="icon" className="w-5 h-5 top-12 absolute left-3" />
+                                        <img src="https://static.thenounproject.com/png/2450449-200.png" alt="country icon" className="w-5 h-5 top-12 absolute left-3" />
                                         <input
                                             type="text"
-                                            name="lastName"
-                                            value={formData.lastName}
+                                            name="country"
+                                            value={formData.country}
                                             onChange={handleInputChange}
                                             placeholder="Country"
-                                            className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.lastName ? "border-red-500" : ""}`}
+                                            className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.country ? "border-red-500" : ""}`}
                                         />
                                     </div>
-                                    {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName}</p>}
+                                    {errors.country && <p className="text-red-500 text-sm">{errors.country}</p>}
                                 </div>
-                            </div> 
-                           
+                            </div>
+
+
                             {/* University Field */}
                             <div className="mb-4 relative">
                                 <label className="block font-semibold mb-2 text-[#44006C]">University <span className="text-red-500 ml-1">*</span> </label>
                                 <div className="flex items-center">
-                                    <img src="https://purepng.com/public/uploads/thumbnail//purepng.com-graduation-cap-clipartclipartgraduation-cap-cliparthat-cap-student-school-graduation-mortarboard-education-university-object-degree-diploma-college-graduate-6315223241997bjqy.png" alt="icon" className="w-5 h-5 top-12 absolute left-3" />
+                                    <img src="https://purepng.com/public/uploads/thumbnail//purepng.com-graduation-cap-clipartclipartgraduation-cap-cliparthat-cap-student-school-graduation-mortarboard-education-university-object-degree-diploma-college-graduate-6315223241997bjqy.png" alt="graduation cap icon" className="w-5 h-5 top-12 absolute left-3" />
                                     <input
-                                        type="email"
-                                        name="email"
-                                        value={formData.email}
+                                        type="text"
+                                        name="university"
+                                        value={formData.university}
                                         onChange={handleInputChange}
                                         placeholder="University"
-                                        className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.email ? "border-red-500" : ""}`}
+                                        className={`mt-1 p-2 w-full bg-[#F5E4FF] border rounded-xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1)] pl-10 focus:outline-none focus:ring-2 focus:ring-[#44006C] ${errors.university ? "border-red-500" : ""}`}
                                     />
                                 </div>
-                                {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                                {errors.university && <p className="text-red-500 text-sm">{errors.university}</p>}
                             </div>
+
 
                             {/* Phone Field */}
                             <div className="mb-4 relative">
