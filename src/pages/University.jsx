@@ -353,7 +353,7 @@ function University() {
                 </div>
                 <Link
                   key={card.id}
-                  to={`/${createSlug(card.title)}/${createSlug(card.url)}`} // Create slugs for both title and URL
+                  to={`/${createSlug(card.title)}`} // Create slugs for both title and URL
                   className="text-blue-500 hover:text-blue-700 text-sm"
                 >
                   See More
