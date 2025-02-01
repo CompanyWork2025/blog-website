@@ -12,6 +12,7 @@ function Footer() {
           <Link to="/" className="link hover:text-purple-400 link-hover">Home</Link>
           <Link to="/universities" className="link hover:text-purple-400 link-hover">Universities</Link>
           <Link to="/news" className="link hover:text-purple-400 link-hover">News</Link>
+          <Link to="/apply" className="link hover:text-purple-400 link-hover">Apply Now!</Link>
         </nav>
         
         {/* Icons (Middle Center) */}

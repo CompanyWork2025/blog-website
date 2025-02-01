@@ -177,6 +177,7 @@ function University() {
       image: "https://rosvuz.ru/uploads/partition117/unit/2/931dd5484e41022169df681800a40b57.800_415.jpg?code=MjM5OTguODAwXzQxNQ==",
       url: "http://www.thedoctorsiea.in/"
     },
+    
     {
       id: 22,
       title: "Far Eastern Federal University (FEFU)",
