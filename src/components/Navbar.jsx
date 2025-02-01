@@ -73,6 +73,7 @@ function Navbar() {
           <li><Link to="/" className="text-purple-600 hover:underline" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/universities" className="text-purple-600 hover:underline" onClick={closeMenu}>Universities</Link></li>
           <li><Link to="/news" className="text-purple-600 hover:underline" onClick={closeMenu}>News</Link></li>
+          <li><Link to="/apply" className="text-purple-600 hover:underline" onClick={closeMenu}>Apply</Link></li>
         </ul>
       </div>
     </nav>
