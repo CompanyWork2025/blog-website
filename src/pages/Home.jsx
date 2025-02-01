@@ -22,14 +22,14 @@ const Home = () => {
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Study MBBS in Russia 2025 | MBBS in Russia for Indian Students | Russian Top Medical Universities" />
             <meta property="og:description" content="Discover the latest blogs and articles about Russia, its culture, news, and trends on our website." />
-            <meta property="og:image" content="/logo.jpg" />
+            <meta property="og:image" content="/logo.png?v=2" />
             <meta property="og:url" content="https://blog-website-test.netlify.app/" />
 
             {/* Twitter Card Meta Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Study MBBS in Russia 2025 | MBBS in Russia for Indian Students | Russian Top Medical Universities" />
             <meta name="twitter:description" content="Discover the latest blogs and articles about Russia, its culture, news, and trends on our website." />
-            <meta name="twitter:image" content="/logo.jpg" />
+            <meta name="twitter:image" content="/logo.png?v=2" />
           </Helmet>
           <Hero />
           <Intro />

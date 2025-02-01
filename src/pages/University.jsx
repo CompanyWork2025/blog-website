@@ -300,14 +300,14 @@ function University() {
         <meta property="og:type" content="Russia Blog Website" />
         <meta property="og:title" content="Study MBBS in Russia 2025 | Universities - 2025 Latest Blogs" />
         <meta property="og:description" content="Browse universities and explore articles on higher education, rankings, and global university trends on Blog Website." />
-        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:image" content="/logo.png?v=2" />
         <meta property="og:url" content="https://blog-website-test.netlify.app/universities" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Study MBBS in Russia 2025 | Universities - 2025 Latest Blogs" />
         <meta name="twitter:description" content="Explore insightful articles on universities, higher education, and university rankings at Blog Website." />
-        <meta name="twitter:image" content="/logo.jpg" />
+        <meta name="twitter:image" content="/logo.png?v=2" />
       </Helmet>
 
       <div className="min-h-screen lg:px-20 bg-gray-100 py-8">

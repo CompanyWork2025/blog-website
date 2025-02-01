@@ -42,14 +42,14 @@ const News = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Study MBBS in Russia 2025 | News & Updates - 2025 Latest Blogs" />
         <meta property="og:description" content="Stay updated with the latest news, events, and updates about the university and its functions." />
-        <meta property="og:image" content="/logo.jpg" />
+        <meta property="og:image" content="/logo.png?v=2" />
         <meta property="og:url" content="https://blog-website-test.netlify.app/news" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Study MBBS in Russia 2025 | News & Updates - 2025 Latest Blogs" />
         <meta name="twitter:description" content="Stay updated with the latest news, events, and updates about the university and its functions." />
-        <meta name="twitter:image" content="/logo.jpg" />
+        <meta name="twitter:image" content="/logo.png?v=2" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-100 py-10 px-4">
