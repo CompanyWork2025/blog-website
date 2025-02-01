@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -93,6 +94,18 @@ const ContactPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Apply Now - Secure Your Spot Today</title>
+                <meta name="description" content="Don't miss out on your chance! Apply now to secure your spot or contact us for quick assistance. Call +7 9515190376 or use our online form." />
+                <meta name="keywords" content="apply now, admissions, secure your spot, quick assistance, application form, contact us" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Apply Now - Secure Your Spot Today" />
+                <meta property="og:description" content="Don't miss out on your chance! Apply now to secure your spot or contact us for quick assistance." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.studymedicalmbbsinrussia.co.in/apply" />
+                <meta property="og:image" content="https://www.studymedicalmbbsinrussia.co.in/apply/logo.png" />
+            </Helmet>
+
             <div className="bg-gradient-to-b from-gray-100 to-white md:max-h-[130vh] min-h-[20vh] flex flex-col items-center justify-center py-6 lg:py-10 lg:px-4">
 
                 {/* Section for "GET IN TOUCH!" heading and info */}
