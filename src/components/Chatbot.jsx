@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'; // Used for navigation to card detail
 
 // Blog card data
@@ -284,20 +284,43 @@ const Chatbot = () => {
   const [isWaiting, setIsWaiting] = useState(false); // To control flow of conversation
   const [isError, setIsError] = useState(false); // To control error state
   const [userInput, setUserInput] = useState('');
+  const [showQueryPopup, setShowQueryPopup] = useState(false); // Toggle for "Have any query?" popup
+  const [isQueryPopupOpen, setIsQueryPopupOpen] = useState(true);
+
 
   const navigate = useNavigate();
-
+  const intervalRef = useRef(null);  // Correctly initialize useRef
   const handleChatOpen = () => {
     setIsOpen(true);
-    setUserName(''); // Reset username
-    setUniversity(''); // Reset university
-    setUserInput(''); // Clear input field
+    setShowQueryPopup(false);  // Immediately hide the query popup when AI image is clicked
+    setUserName('');
+    setUniversity('');
+    setUserInput('');
     setMessage('What is your name? 😊');
     setIsWaiting(true);
-    setIsError(false); // Reset error when reopening
+    setIsError(false);
+
+    // Stop the popup animation by clearing the interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setShowQueryPopup((prev) => !prev);
+    }, 5000);
+
+    return () => {
+      // Clear interval when component unmounts or when no longer needed
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
   
 
+  
   const handleCloseChat = () => {
     setIsOpen(false);
     setMessage('Goodbye! 👋');
@@ -343,8 +366,15 @@ const Chatbot = () => {
 
   return (
     <div>
+       {showQueryPopup && (
+        <div className="query-popup" onClick={handleChatOpen}>
+          Have Any Query?
+        </div>
+      )}
+
+
       <div className={`chatbot-container ${isOpen ? 'open' : ''}`} onClick={handleChatOpen}>
-        <div className="chatbot-btn"><img src='https://www.shareicon.net/data/2017/01/06/868320_people_512x512.png' alt='ai' className='w-16 h-16'/></div>
+        <div className="chatbot-btn"><img src='https://www.shareicon.net/data/2017/01/06/868320_people_512x512.png' alt='ai' className='w-16 h-16' /></div>
       </div>
 
       {isOpen && (
@@ -358,14 +388,14 @@ const Chatbot = () => {
             </div>
             {isWaiting && !isError && (
               <>
-                <input 
+                <input
                   type="text"
                   value={userInput}
                   onChange={(e) => setUserInput(e.target.value)}
                   autoFocus
                   placeholder={userName ? "University Name" : "Your name"}
                 />
-                <button 
+                <button
                   onClick={userName ? handleUniversitySubmit : handleNameSubmit}
                   className="submit-btn"
                 >
@@ -374,7 +404,7 @@ const Chatbot = () => {
               </>
             )}
             {isError && (
-              <button 
+              <button
                 onClick={handleCloseChat}
                 className="close-btn-error"
               >
@@ -386,6 +416,32 @@ const Chatbot = () => {
       )}
 
       <style jsx>{`
+ 
+     .query-popup {
+          position: fixed;
+          bottom: 80px;
+          right: 20px;
+          background-color: #ffcc00;
+          color: black;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-weight: bold;
+          cursor: pointer;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          animation: popupAnimation 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes popupAnimation {
+          0% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(-10px);
+            opacity: 0.8;
+          }
+        }
+
         .chatbot-container {
           position: fixed;
           bottom: 2px;
@@ -502,4 +558,3 @@ const Chatbot = () => {
 };
 
 export default Chatbot;
-
