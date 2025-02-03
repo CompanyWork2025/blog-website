@@ -318,9 +318,9 @@ const Chatbot = () => {
       }
     };
   }, []);
-  
 
-  
+
+
   const handleCloseChat = () => {
     setIsOpen(false);
     setMessage('Goodbye! 👋');
@@ -366,7 +366,7 @@ const Chatbot = () => {
 
   return (
     <div>
-       {showQueryPopup && (
+      {showQueryPopup && (
         <div className="query-popup" onClick={handleChatOpen}>
           Have Any Query?
         </div>
@@ -417,19 +417,21 @@ const Chatbot = () => {
 
       <style jsx>{`
  
-     .query-popup {
-          position: fixed;
-          bottom: 80px;
-          right: 20px;
-          background-color: #ffcc00;
-          color: black;
-          padding: 10px 15px;
-          border-radius: 8px;
-          font-weight: bold;
-          cursor: pointer;
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          animation: popupAnimation 1.5s ease-in-out infinite alternate;
-        }
+    .query-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: popupAnimation 1.5s ease-in-out infinite alternate;
+  z-index: 9999; /* Ensure it stays on top */
+}
+
 
         @keyframes popupAnimation {
           0% {
