@@ -196,14 +196,6 @@ function University() {
     },
     {
       id: 24,
-      title: "Novosibirsk State Medical University (NSMU)",
-      description: "Novosibirsk State Medical University (NSMU) is one of the oldest and most prestigious medical universities in Russia, located in Novosibirsk, the capital city of Siberia. Founded in 1935, it has a long history of excellence in medical education, research, and clinical practice.",
-      authorImage: "https://static.tildacdn.com/tild3438-3835-4363-b634-626431373730/Group_5.png",
-      image: "https://i3.photo.2gis.com/images/branch/1/140737516391892_f12f.jpg",
-      url: "http://www.rrecrussia.com/"
-    },
-    {
-      id: 25,
       title: "Kabardino-Balkarian State University (Medical Faculty) ",
       description: "Kabardino-Balkarian State University (KBSU) is a major public university located in Nalchik, the capital of the Kabardino-Balkar Republic in Russia. The university offers a range of educational programs in various fields, and the Medical Faculty is one of its prominent departments, dedicated to training future doctors and healthcare professionals.",
       authorImage: "https://static.tildacdn.com/tild6631-3131-4062-a535-633332653365/12.png",
@@ -211,7 +203,7 @@ function University() {
       url: "http://www.rrecrussia.com/"
     },
     {
-      id: 26,
+      id: 25,
       title: "Kuban State Medical University (KSMU) ",
       description: "Kuban State Medical University (KSMU) is one of Russia’s leading institutions for medical education, located in Krasnodar, the capital of the Krasnodar Krai in southern Russia. Established in 1920, KSMU has a rich history of training healthcare professionals and is known for its high educational standards, research contributions, and clinical training programs.",
       authorImage: "https://волонтеры-медики.рф/_next/image?url=https%3A%2F%2Fold.xn----ctbhcbtapdmikb4a2a0m.xn--p1ai%2Fwp-content%2Fuploads%2F2019%2F01%2FKubGMU.png&w=1920&q=75",
@@ -219,7 +211,7 @@ function University() {
       url: "http://www.rrecrussia.com/"
     },
     {
-      id: 27,
+      id: 26,
       title: "I.M. Sechenov Moscow Medical University ",
       description: "I.M. Sechenov Moscow Medical University, commonly known as Sechenov University, is one of the oldest and most prestigious medical schools in Russia. It was founded in 1758 as the Medical Faculty of Moscow University and became an independent medical institution in 1866. ",
       authorImage: "https://sun6-23.userapi.com/impg/KcyjdiL2eyMA3TsOXTk179W0ZLknJgu_hz2T4Q/_C6dbV789nQ.jpg?size=350x250&quality=95&sign=77d25878a2b57d6ac175e417ed792386&c_uniq_tag=ZbQXwk5Lk6pNKEJ3PQiBJ9lm8B_h2vWIKSEZqpYC3-4&type=album",
@@ -227,7 +219,7 @@ function University() {
       url: "http://www.thedoctorsiea.in/"
     },
     {
-      id: 28,
+      id: 27,
       title: "Siberian State Medical University (SSMU)  ",
       description: "Siberian State Medical University (SSMU) is a well-respected medical institution located in Tomsk, Russia. It was founded in 1888 as the Tomsk Imperial University’s Medical Faculty and became an independent institution in 1963. It is known for its strong emphasis on medical education, research, and training healthcare professionals, and is one of the top medical universities in Siberia.",
       authorImage: "https://avatars.mds.yandex.net/i?id=705b447f9bb4ec54f4a809f9fcf90b38_l-5129388-images-thumbs&n=13",
@@ -235,7 +227,7 @@ function University() {
       url: "http://www.thedoctorsiea.in/"
     },
     {
-      id: 29,
+      id: 28,
       title: "Dagestan State Medical University (DSMU) ",
       description: "Dagestan State Medical University (DSMU) is a prominent medical university located in Makhachkala, the capital city of the Republic of Dagestan, Russia. Founded in 1932, DSMU has established itself as a major educational institution in the North Caucasus region, with a strong reputation for producing skilled medical professionals and contributing to the advancement of healthcare in the region.",
       authorImage: "https://avatars.mds.yandex.net/i?id=8f614f61159265529948d3172e80f731_l-5235770-images-thumbs&n=13",
@@ -243,7 +235,7 @@ function University() {
       url: "http://www.thedoctorsiea.in/"
     },
     {
-      id: 30,
+      id: 29,
       title: "Peoples' Friendship University of Russia (RUDN University) ",
       description: "Peoples' Friendship University of Russia (RUDN University), located in Moscow, is one of the most prestigious and internationally recognized universities in Russia. Founded in 1960, it was originally established to provide higher education to students from Africa, Asia, and Latin America to foster international cooperation and understanding during the Cold War. ",
       authorImage: "https://www.rudn.ru/storage/media/page/8aba8519-ab38-402f-a5e0-a3194bc6b63e/oLKgZKBLujeSuK8BUuZp5WTDOqmFdBtbntWpISUN.jpg",
