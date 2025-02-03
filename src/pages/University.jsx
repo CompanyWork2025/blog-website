@@ -313,7 +313,7 @@ function University() {
           {/* Search Bar */}
           <input
             type="text"
-            placeholder="Search blogs..."
+            placeholder="Search University Blogs..."
             className="px-4 py-2 w-80 lg:w-1/3 border border-2 rounded-md"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
