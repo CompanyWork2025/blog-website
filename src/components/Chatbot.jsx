@@ -289,10 +289,14 @@ const Chatbot = () => {
 
   const handleChatOpen = () => {
     setIsOpen(true);
+    setUserName(''); // Reset username
+    setUniversity(''); // Reset university
+    setUserInput(''); // Clear input field
     setMessage('What is your name? 😊');
     setIsWaiting(true);
     setIsError(false); // Reset error when reopening
   };
+  
 
   const handleCloseChat = () => {
     setIsOpen(false);
@@ -340,7 +344,7 @@ const Chatbot = () => {
   return (
     <div>
       <div className={`chatbot-container ${isOpen ? 'open' : ''}`} onClick={handleChatOpen}>
-        <div className="chatbot-btn"><img src='https://i.pinimg.com/originals/4b/cb/1f/4bcb1fb72d1d08efa44efa5ceb712ec7.gif' alt='ai-robo' className='w-28 h-28'/></div>
+        <div className="chatbot-btn"><img src='https://www.shareicon.net/data/2017/01/06/868320_people_512x512.png' alt='ai' className='w-16 h-16'/></div>
       </div>
 
       {isOpen && (
@@ -384,8 +388,8 @@ const Chatbot = () => {
       <style jsx>{`
         .chatbot-container {
           position: fixed;
-          bottom: -10px;
-          right: -20px;
+          bottom: 2px;
+          right: 2px;
           padding: 10px;
           border-radius: 250%;
           cursor: pointer;
