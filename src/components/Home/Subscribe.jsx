@@ -17,7 +17,7 @@ const SubscriptionForm = () => {
             placeholder="Enter your email"
             className="px-4 py-3 rounded-l-lg border border-gray-300 w-40 lg:w-[500px]"
           />
-          <button className="bg-purple-500 text-white px-6 py-3 rounded-r-lg w-[150px]">
+          <button className="bg-purple-500 mt-2 text-white px-6 py-3 rounded-r-lg w-[150px]">
             Subscribe
           </button>
         </div>
