@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
@@ -46,50 +46,43 @@ const ContactPage = () => {
         return formErrors;
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         const formErrors = validate();
         setErrors(formErrors);
-
+    
         // Proceed if no validation errors
         if (Object.keys(formErrors).length === 0) {
             setIsSubmitting(true);
-
-            // Send email via EmailJS
-            emailjs
-                .sendForm(
-                    "service_nqcxku8",  // Your Service ID
-                    "YOUR_TEMPLATE_ID",  // Your Template ID
-                    e.target,  // The form
-                    "YOUR_PUBLIC_KEY"   // Your Public Key
-                )
-                .then(
-                    (result) => {
-                        console.log(result.text, result.status, result.text); // Use result, not response
-                        setStatus('Message sent successfully!');
-                        setFormData({
-                            firstName: "",
-                            lastName: "",
-                            city: "",
-                            country: "",
-                            university: "",
-                            phone: "",
-                            message: "",
-                            termsAccepted: false, // Reset the checkbox state
-                        });
-                        setErrors({}); // Clear any previous errors
-                    },
-                    (error) => {
-                        console.error(error.text);
-                        alert("Something went wrong, please try again.");
-                    }
-                );
-
-            setIsSubmitting(false);
+    
+            // Send data to Formspree using axios
+            const formData = new FormData(e.target);
+    
+            axios.post('https://formspree.io/f/xbldkyon', formData)
+                .then((response) => {
+                    console.log('Success:', response);
+                    setStatus('Message sent successfully!');
+                    setFormData({
+                        firstName: "",
+                        lastName: "",
+                        city: "",
+                        country: "",
+                        university: "",
+                        phone: "",
+                        message: "",
+                        termsAccepted: false, // Reset the checkbox state
+                    });
+                    setErrors({}); // Clear any previous errors
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert("Something went wrong, please try again.");
+                })
+                .finally(() => {
+                    setIsSubmitting(false);
+                });
         }
     };
-
 
 
     return (
@@ -163,7 +156,15 @@ const ContactPage = () => {
 
                     {/* Right Side - Contact Form */}
                     <div className="lg:w-1/2 mt-10 md:mt-8 lg:-mt-10 w-full flex justify-center">
-                        <form onSubmit={handleSubmit} className="bg-white p-6 md:p-8 rounded-3xl border-2 border-[#44006C] shadow-sm w-full flex-grow">
+                        <form
+                            onSubmit={handleSubmit}
+                            action="https://formspree.io/f/xbldkyon"
+                            method="POST"
+                            encType="multipart/form-data"
+                            className="bg-white p-6 md:p-8 rounded-3xl border-2 border-[#44006C] shadow-sm w-full flex-grow"
+                        >
+
+
                             {/* Name Fields */}
                             <div className="flex space-x-4 mb-4">
                                 <div className="w-1/2 relative">
